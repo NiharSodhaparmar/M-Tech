@@ -1,0 +1,24 @@
+#include <sys/time.h>
+
+struct timeval start, end;
+gettimeofday(&start, NULL);
+gettimeofday(&end, NULL);
+
+cout << "Time taken" << endl;
+cout << "\tNo of seconds: " << end.tv_sec - start.tv_sec << endl;
+cout << "\tNo of micro seconds: " << end.tv_usec - start.tv_usec << endl;
+
+
+
+using namespace std::chrono;
+
+auto start = high_resolution_clock::now();
+
+auto end = high_resolution_clock::now();
+
+cout << "\tNo of seconds: " << duration<double>(end - start).count() << endl;
+cout << "\tNo of micro seconds: " << duration_cast<microseconds>(end - start).count() << endl;
+
+     
+For the above scenario we can use radix sort.  Radix Sort is to do digit by digit sort starting from least significant digit to most significant digit.
+Time Complexity of radix sort: $ \Omega(n * log_b n) $

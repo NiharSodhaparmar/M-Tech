@@ -1,0 +1,23 @@
+function output_image = my_hist_matcher(input_image,specific_image)
+  rImg = input_image;
+  spImg = specific_image;
+
+  [m,n] = size(rImg);
+  [final1,r_fv,r_s1] = my_hist_equlizer(rImg);
+  [final2,sp_fv,sp_g1] = my_hist_equlizer(spImg);
+
+  L=256;
+
+  for i=0:(L-1)
+    [value,index(i+1)] = min(abs(sp_g1-r_s1(i+1)));
+  endfor
+
+  index = index-1;
+
+  final = zeros(m,n);
+  for i=0:(L-1);
+    final = final+(rImg == i)*index(i+1);
+  endfor
+  finalImg = uint8(final);
+  output_image = uint8(finalImg);
+endfunction

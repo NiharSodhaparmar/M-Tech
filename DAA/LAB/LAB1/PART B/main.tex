@@ -1,0 +1,344 @@
+\documentclass[a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\def\changemargin#1#2{\list{}{\rightmargin#2\leftmargin#1}\item[]}
+\let\endchangemargin=\endlist
+
+\title{Lab Assignment No 1 - Introduction and Advanced Data Structures}
+\author{Nihar Sodhaparmar - P22CS013}
+\date{September 2022}
+
+\begin{document}
+
+\maketitle
+
+\begin{center}
+    \textbf{\Large PART - B}
+\end{center}
+
+\begin{enumerate}[label=(\alph*)]
+     % ############################ a ############################
+     \item IF {$ f(n) = 100 * 2^n + 8n^2 $}, prove that {$ f(n) = O(2^n) $} . Can you claim that {$ f(n) = \Theta(2^n) $}. IF so, prove the same.
+ 
+     \textbf{Answer:}
+     \begin{align*}
+         f(n) & = 100 * 2^n + 8 n^2 \\
+         &\le 100 * 2^n + 8 * 2^n \\
+         &\le 108 * 2^n \\
+         &= O(n^2), \text{where  $ c = 108 $  and  $ \forall   n > 0 $}
+     \end{align*}
+     
+     % ############################ b ############################
+     \vspace{0.5cm}
+     \item Is it correct to say that {$ f(n) = 3n + 8 = \Omega(1) $} ?. Given the facts that {$ f(n)=3n + 3=\Omega(n) $} and {$ f(n)=3n+3 = \Omega(1) $}, which one is correct? Which one would you choose to prescribe the growth rate of f(n) ?
+     \textbf{Answer:}
+ 
+     \begin{enumerate}[label=(\roman*)]
+         \item {$ f(n) = 3n + 8 = \Omega(1) $} is correct.
+    
+         \vspace{0.5cm}
+         \item {$ f(n) = 3n + 8 = \Omega(1) $} and {$ f(n)=3n + 3=\Omega(n) $} both are correct.
+         \begin{align*}
+             f(n) & = 3n + 8 \\
+             & \ge 3n \\
+             & = \Omega(n), \quad \text{where {$ c = 3 $} and {$ \forall n > 0 $}}
+         \end{align*}
+    
+         \vspace{0.5cm}
+         \item {$ f(n)=3n + 3=\Omega(n) $} is use for showing growth rate because it is tight lower bound.
+     \end{enumerate}
+ 
+     % ############################ c ############################
+     \vspace{0.5cm}
+     \item Consider the two functions viz. {$ f(n) = n^2 $} and {$ g(n) = 2n^2 $}. Which functions growth rate is higher? Use appropriate asymptotic notation to specify the time complexity of the two functions.
+ 
+     \textbf{Answer:}
+ 
+     \begin{align*}
+         f(n) = n^2  = O(n^2) , \quad \text{where {$ c = 1 $} and {$ \forall n > 0 $} } \\
+         g(n) = 2n^2 = O(n^2), \quad \text{where {$ c = 2 $} and {$ \forall n > 0 $}}
+     \end{align*}
+ 
+     \begin{changemargin}{0.8cm}{0cm}
+         So, both functions have same big {$ O $} complexity and growth rate is same.
+     \end{changemargin}
+     
+     % ############################ d ############################
+     \vspace{0.5cm}
+     \item Prove the following: For any two functions {$ f(n) $} and {$ g(n) $}, {$ f(n) = \Theta(g(n)) $}  only if {$ f(n) = O(g(n)) $} and {$ f(n) = \Omega(g(n)) $}. 
+ 
+      \textbf{Answer:}
+ 
+     \begin{enumerate}[label=(\roman*)]
+         \item {$ f(n) = O(g(n)) $}
+         \\{$ f(n) \le c_1 g(n) $}, \quad {$ \forall n > n_1 $}
+    
+         \vspace{0.5cm}
+         \item {$ f(n) = \Omega(g(n)) $}
+         
+         \*{$ c_2 g(n) \le f(n) $}, \quad {$ \forall n > n_2 $}
+         
+         \vspace{0.5cm}
+         from (i) and (ii),
+         \\{$ c_1 g(n) <= f(n) <= c_1 g(n) $}, \quad {$ \forall n > max(n_1, n_2) $}
+         \
+         \\therefore, {$ f(n) = \Theta(g(n)) $}
+    
+     \end{enumerate}
+ 
+     % ############################ e ############################
+     \vspace{0.5cm}
+     \item Solve the following problems:
+ 
+     \begin{enumerate}[label=(\roman*)]
+         \item  Show that {$ T(n) = 1 + 2 + 3 + \ldots ..n = \Theta(n^2) $}
+     
+         \textbf{Answer:}
+         \begin{align*}
+             n/2 + n/2 + n/2 + \ldots ..n/2 &\le T(n) \le n + n + n + \ldots ..n \\
+             n * n/2 &\le T(n) \le n * n \\
+             n^2 / 2 &\le f(n) \le n^2 \\
+         \end{align*}
+         
+         \begin{changemargin}{0.8cm}{0cm}
+             therefore  {$f(n) = \Theta(n^2)$} , \quad \text {where {$ c_1 = 1/2 $} and {$ c_2 = 2 $} {$ \forall n > 0 $}}
+         \end{changemargin}
+     
+         \vspace{0.5cm}
+         \item Prove or disprove: {$ 2n^3 - n^2 = O(n^3) $}
+     
+         \textbf{Answer:}
+         \begin{align*}
+             f(n) &= 2n^3 - n^2 \\
+             &\le 2n^3 \\
+             &= c n^3,  \text{where  $ c = 2 $  and  $ \forall   n > 0 $} \\
+             &= O(n^3)
+         \end{align*}
+     
+         \item Prove that {$ 7n^2 log n + 25000n = O(n^2log n) $}
+     
+         \textbf{Answer:}
+         \begin{align*}
+             f(n) &= 7n^2 log n + 25000n  \\
+             &\le 7n^2 log n + 25000n^2 log n  \\
+             &\le 25007n^2 log n \\
+             &= O(n^2 log n), \text{where  $ c = 25007 $  and  $ \forall   n > 0 $} \\
+         \end{align*}
+         
+     \end{enumerate}
+     
+     % ############################ f ############################
+     \item If {$ T1(n) = O(f(n)) $} and {$ T2(n) = O(g(n)) $} then show that (a) {$ T1(n) + T2(n) = max(O(g(n), O(f(n)) $} (b) {$ T1(n) * T2(n) = O((g(n) * (f(n)) $}.
+ 
+     \textbf{Answer:}
+     
+     \*{$ T1(n) = O(f(n)) \le c_1f(n) \ldots (i)$}
+     \\{$ T2(n) = O(g(n)) \le c_2g(n) \ldots (ii) $}
+     
+     \begin{enumerate}
+         \item {$ T1(n) + T2(n) = max(O(g(n), O(f(n)) $}
+         \begin{align*}
+             T1(n) + T2(n) &\le c_1f(n) + c_2g(n) , \quad \text{where {$ n_0 = max(n_1, n_2) $}} \\
+             &\le c_3f(n) + c_3g(n) , \quad \text{where {$c_3 = max(c_1, c_2)$}} \\
+             &\le 2c_3 max(f(n), g(n))  \\
+             &\le c max(f(n), g(n))  \\
+             &= O (max(f(n), g(n)))  \\
+         \end{align*}
+         
+         \item {$ T1(n) * T2(n) = O((g(n) * (f(n)) $}
+         \begin{align*}
+             T1(n) * T2(n) &\le c_1c_2f(n)*g(n) \\
+             &\le cf(n)*g(n) \\
+             &= O(f(n)*g(n)) \\
+         \end{align*}
+         
+     \end{enumerate}
+     
+     % ############################ g ############################
+     \vspace{0.5cm}
+     \item  Show that {$ max\{f(n), g(n)\} = \Theta(f(n) + g(n)) $}
+ 
+     \textbf{Answer:}
+     
+     \*First prove, {$ max{f(n), g(n)} = \Omega(f(n) + g(n)) $}
+     \begin{align*}
+         max(f(x), g(x)) &\ge g(x) \dots (i)  \\
+         max(f(x), g(x)) &\ge f(x) \dots (ii)  \\
+         \text{Now (i) + (ii),} \\
+         2max(f(x), g(x)) &\ge f(x) + g(x)  \\
+         max(f(x), g(x)) &\ge 1/2 (f(x) + g(x))  \\
+         max(f(x), g(x)) &= \Omega(f(x) + g(x)) \dots (I)  \\
+     \end{align*}
+     
+     \vspace{0.5cm}
+     \*Now prove, {$ max{f(n), g(n)} = O(f(n) + g(n)) $}
+     \begin{align*}
+         f(x) &\le f(x) + g(x)  \text{ and }  g(x) \le f(x) + g(x) \\
+         f(x) &= O(f(x) + g(x))  \text{ and }  g(x) = O(f(x) + g(x)) 
+     \end{align*}
+     therefore, {$ max(f(x), g(x)) = O(f(x) + g(x)) \dots (II) $}
+     
+     \vspace{0.5cm}
+     \*from (I) and (II),
+     \\{$ max\{f(n), g(n)\} = \Theta(f(n) + g(n)) $}
+     
+     % ############################ h ############################
+     \vspace{0.5cm}
+     \item Prove or disprove: (a) {$n^2 2^n + n^{100} = \Theta(n^2 2^n)$} (b) {$ n^2/log n = \Theta(n^2) $}
+     
+     \textbf{Answer:}
+     
+     \begin{enumerate}
+         \item  Given, {$ n^22^n + n^{100} = \Theta(n^22^n) $}, we need to find {$        c_1 $} and {$ c_2 $} 
+                    
+                 such that {$ c_1 * n^22^n \le f(n) \le c_2 * n^22^n $}
+                 where {$ f(n) = n^22^n + n^{100} $}
+
+                 So that for {$ c_1 = \frac{1}{2}$} and {$c_2 = 2 $} above inequality holds.
+
+                 Hence proved, {$ n^22^n + n^{100} = \theta(n^22^n) $}
+        
+         \vspace{0.5cm}
+         \item  Given, {$ \frac{n^2}{\log(n)} = \Theta(n^2)$}, we need to find {$        c_1 $} and {$ c_2 $} 
+                    
+                such that {$ c_1 * n^2 \le f(n) \le c_2 * n^2 $}
+                where {$ \frac{n^2}{\log(n)} = \Theta(n^2)$}
+
+                But for {$ n \ge n_0(=1) $} no such {$ c_1 $} and {$ c_2 $} exist.
+
+                Hence we can say, {$ n^22^n + n^{100} \ne \Theta(n^22^n) $}
+     \end{enumerate}
+     
+     % ############################ i ############################
+     \vspace{0.5cm}
+     \item  Prove that if T(x) is a polynomial of degree n, then {$T(x) = \Theta(x^n)$}.
+     
+     \textbf{Answer:}
+     
+     \begin{align*}
+         T(x) &= a_0 + a_1x + a_2x^2 +. . . . . . . . . + a_m x^m \\
+         &\le a_0x^m + a_1x^m + a_2x^m +. . . . . . . . . + a_m x^m \\
+         &\le (a_0 + a_1 + a_2 +. . . . . . . . . + a_m) x^m \\
+         &= c x^m \\
+         &= O(x^m) \\
+         \\
+         T(x) &= a_0 + a_1x + a_2x^2 +. . . . . . . . . + a_m x^m \\
+         &\ge a_m x^m \\
+         &= c n^m \\
+         &= \Omega(n^m) \
+     \end{align*}
+     
+     \begin{changemargin}{0.8cm}{0cm}
+         So, we can say that $ \Theta(x^m) $
+     \end{changemargin}
+     
+     % ############################ j ############################
+     \vspace{0.5cm}
+     \item If P(n) is any polynomial of degree m or less then show that {$P(n) = a^0 + a^1n + a^2n^2 +. . . . . . . . . . . . . . . + a^m n^m$} then {$P(n) = O(n^m)$}.
+     
+     \textbf{Answer:}
+     \begin{align*}
+         P(n) &= a_0 + a_1n + a_2n^2 +. . . . . . . . . + a_m n^m \\
+         &\le a_0n^m + a_1n^m + a_2n^m +. . . . . . . . . + a_m n^m \\
+         &\le (a_0 + a_1 + a_2 +. . . . . . . . . + a_m) n^m \\
+         &= c n^m \\
+         &= O(n^m) \\
+     \end{align*}
+     
+     % ############################ k ############################
+     \vspace{0.5cm}
+     \item Find the running time of the following algorithm in terms of the asymptotic notations:
+
+     \*Algorithm SUM( n )
+     \\1 . \quad answer = 0 ;
+     \\2 . \quad for i= 1 t o n do
+     \\3 . \quad \quad for j= 1 t o i do
+     \\4 . \quad \quad \quad for k = 1 t o j do
+     \\5 . \quad \quad \quad \quad answer++;
+     \\6 . \quad print(answer);
+     
+     \textbf{Answer:}
+     
+     \*Line 2 runs n times
+     \\Line 3 runs $n * n$ times
+     \\Line 4 runs $n * n * n$ times
+     \\So, running time of algorithm is {$ O(n^3) $}
+     
+     % ############################ l ############################
+     \vspace{0.5cm}
+     \item  Let A and B be two programs that perform the same task. Let {$ t_{A(n)} $} and {$ t_{B(n)} $} respectively denote their values. For each of the following pairs, find the range of n value for which program A is faster than program B :
+     
+     \begin{enumerate}[label=(\roman*)]
+         \item {$t_{A(n)} = 1000n $} and {$ t_{B(n)} = 10n^2 $}
+         \begin{align*}
+             1000n &< 10n^2 \\
+             1000n - 10n^2 &< 0 \\
+             n(1000 - 10n) &< 0 \\
+             1000 - 10n &< 0 \\
+             n &> 100
+         \end{align*}
+         \begin{changemargin}{0.8cm}{0cm}
+             So that, $ n \in (100, \infty) $
+         \end{changemargin}
+         
+         \vspace{0.5cm}
+         \item {$t_{A(n)} = 1000n log_2 n $} and {$ t_{B(n)} = n^2 $}
+         \begin{align*}
+             1000n log_2 n &< n^2 \\
+             1000n log_2 n - n^2 &< 0 \\
+             n(1000 log_2 n - n) &< 0 \\
+             1000 log_2 n &< n \\
+             log_2 n^{1000} &< n \\
+             n^{1000} &< 2^n \\
+             2^n - n^{1000} &> 0
+         \end{align*}
+         \begin{changemargin}{0.8cm}{0cm}
+             So that, $ n \in  (0, ) $
+         \end{changemargin}
+         
+         \vspace{0.5cm}
+         \item {$t_{A(n)} = 2n^2 $} and {$ t_{B(n)} = n^3 $}
+         \begin{align*}
+             2n^2 &< n^3 \\
+             2n^2 - n^3 &< 0 \\
+             n^2(2 - n) &< 0 \\
+             n &> 2
+         \end{align*}
+         \begin{changemargin}{0.8cm}{0cm}
+             So that, $ n \in  (2, \infty) $
+         \end{changemargin}
+         
+         \vspace{0.5cm}
+         \item {$t_{A(n)} = 2n $} and {$ t_{B(n)} = 100n $}
+         \begin{align*}
+             2n &< 100n \\
+             2n - 100n &< 0 \\
+             -98n &< 0
+         \end{align*}
+         \begin{changemargin}{0.8cm}{0cm}
+             So that, A is always faster than B.
+         \end{changemargin}
+         
+     \end{enumerate}
+     
+     % ############################ m ############################
+     \vspace{0.5cm}
+     \item Consider an input array A of n elements. Each element is an n-bit integer except 0. Which sorting algorithm would you recommend for sorting the array ? Why ? What will be the complexity your sorting algorithm ? [Hint: What is the range in which each array value (i.e. a number) i.e. an integer falls into ?]
+     
+     \textbf{Answer:}
+     
+     % ############################ n ############################
+     \vspace{0.5cm}
+     \item Given the following statement viz. Consider an input array a[1..n] of arbitrary numbers. It is given that the array has only {$ O(1) $} distinct elements. What does the statement imply?
+     
+     \textbf{Answer:}
+     
+     The statement shows that no matter what size of array is, the array has only fixed number of distinct constant element.
+     
+     
+     
+\end{enumerate}
+
+\end{document}

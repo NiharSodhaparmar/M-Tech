@@ -1,0 +1,17 @@
+Department of Computer Science and Engineering - SVNIT,Surat
+Course: Principles of Information Security and Privacy (CS607)
+
+Lab Assignment #3
+Part A
+
+1. Write C code for implementing a Caesar Cipher in which plain text must be fetched from
+the file and cipher text will be stored in separate file. Also perform following actions.
+a. Perform brut force attack on generated cipher text.
+b. Perform frequency analysis and try to decrypt the cipher text.
+2. Write C code for implementing a Rail fence cipher.
+3. Write C code for implementing a Playfair cipher.
+
+Part B
+4. Write C code for implementing a Hill cipher.
+5. Write C code for implementing a Vigenere cipher.
+6. Write C code for implementing a Vernam Cipher.

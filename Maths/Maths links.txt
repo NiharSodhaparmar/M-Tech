@@ -1,0 +1,21 @@
+Function Basic : https://www.mathsisfun.com/sets/injective-surjective-bijective.html
+
+one to one and onto function : https://www.teachoo.com/7062/1163/One-One-function/category/To-prove-one-one---onto-(injective--surjective--bijective)/
+
+Conditional Probability : https://www.cuemath.com/conditional-probability-formula/
+	https://www.probabilitycourse.com/chapter1/1_4_5_solved3.php
+	https://www.analyzemath.com/probabilities/conditional-probabilities.html
+
+Bayes Theorem : https://www.cuemath.com/data/bayes-theorem/
+	https://www.analyzemath.com/probabilities/bayes-theorem.html
+
+Random Variable : https://www.cuemath.com/data/random-variable/
+
+https://www.probabilitycourse.com/chapter3/3_1_5_special_discrete_distr.php
+https://www.probabilitycourse.com/chapter3/3_1_6_solved3_1.php
+
+Hypothesis Testing
+https://www.probabilitycourse.com/chapter8/8_4_1_intro.php
+
+Monty Hell
+https://youtu.be/4Lb-6rxZxx0

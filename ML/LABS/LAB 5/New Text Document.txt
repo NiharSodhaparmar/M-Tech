@@ -1,0 +1,5 @@
+remove outliers
+try different parameters 
+change value of k
+
+https://stackabuse.com/k-nearest-neighbors-algorithm-in-python-and-scikit-learn/

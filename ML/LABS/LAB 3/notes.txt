@@ -1,0 +1,4 @@
+why csv is used?
+datatype of df?
+if we feed only 1, 2, 3 what is error?
+remove outliers only in ideal case

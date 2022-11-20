@@ -1,0 +1,63 @@
+https://www.codingninjas.com/codestudio/guided-paths/competitive-programming/content/126222/offering/1476042
+
+
+{
+	"editor.fontSize": 14,
+	"files.autoSave": "off",
+	"editor.wordWrap": "on",
+	"prettier.tabWidth": 4,
+	"editor.formatOnPaste": true,
+	"editor.minimap.enabled": false,
+	"highlight-matching-tag.styles": {
+		"opening": {
+			"left": {
+				"custom": {
+					"borderWidth": "0 0 0 3px",
+					"borderStyle": "solid",
+					"borderColor": "yellow",
+					"borderRadius": "5px"
+				}
+			},
+			"right": {
+				"custom": {
+					"borderWidth": "0 3px 0 0",
+					"borderStyle": "solid",
+					"borderColor": "yellow",
+					"borderRadius": "5px",
+					"overviewRulerColor": "white"
+				}
+			}
+		}
+	},
+	"emmet.includeLanguages": {
+		"javascript": "javascriptreact"
+	},
+	"emmet.syntaxProfiles": {
+		"javascript": "jsx",
+		"javascript": "html"
+	},
+	"liveServer.settings.fullReload": false,
+	"[javascript]": {
+		"editor.defaultFormatter": "vscode.typescript-language-features"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"update.enableWindowsBackgroundUpdates": false,
+	"editor.formatOnSave": true,
+	"prettier.useTabs": true,
+	"code-runner.runInTerminal": true,
+	"explorer.confirmDelete": false,
+	"window.zoomLevel": 1
+}
