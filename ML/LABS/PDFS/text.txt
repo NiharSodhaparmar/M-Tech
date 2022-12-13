@@ -1,0 +1,35 @@
+Fill with mean
+
+	df['Sale'].fillna(int(df['Sale'].mean()), inplace=True)
+
+
+Drop Null
+
+	df = df.dropna()
+
+
+Drop Null Column
+	df = df[df['colName'].notna()]
+
+	df.dropna(axis=0, subset=['RainTomorrow'], inplace=True)
+
+Categorical encoder
+	import category_encoders as ce
+	encoder = ce.OrdinalEncoder(cols=['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety'])
+	X_train = encoder.fit_transform(X_train)
+	X_test = encoder.transform(X_test)
+
+
+Outlier removal
+
+	q1 = df["AveOccup"].quantile(0.25)
+	q3 = df["AveOccup"].quantile(0.75)
+	iqr = q3-q1
+	low = q1 - 1.5*iqr
+	high = q3 + 1.5*iqr
+
+	df = df[~((df['AveOccup'] >= high) | (df['AveOccup']<= low))]
+	sns.boxplot(df['AveOccup'])
+
+Split Data
+	X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random_state=42)
