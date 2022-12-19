@@ -16,6 +16,17 @@ https://www.probabilitycourse.com/chapter3/3_1_6_solved3_1.php
 
 Hypothesis Testing
 https://www.probabilitycourse.com/chapter8/8_4_1_intro.php
+https://youtube.com/playlist?list=PLRNL7AjA6rjy_ryWXKMil8CjtLQjUiy0I
 
 Monty Hell
 https://youtu.be/4Lb-6rxZxx0
+
+Markov Chain
+https://youtube.com/playlist?list=PLRNL7AjA6rjycQ8A2pjaiF2h3v6R_9Gyr
+
+HMM
+https://youtu.be/irRCDQQtTh8
+
+Fuzzy set
+https://youtu.be/vof2vhfqoBo
+https://youtu.be/o-2O4fmIu3E
