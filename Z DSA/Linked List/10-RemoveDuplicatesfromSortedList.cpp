@@ -1,6 +1,11 @@
 #include <iostream>
 using namespace std;
 
+/*
+Given the head of a sorted linked list, delete all duplicates such that each element
+appears only once. Return the linked list sorted as well.
+*/
+
 struct ListNode
 {
     int val;
@@ -16,52 +21,31 @@ void printLinkedList(ListNode *head);
 class Solution
 {
 public:
-    int getLengthOfLinkedList(ListNode *head)
-    {
-        int count = 0;
-        while (head)
-        {
-            head = head->next;
-            count++;
-        }
-        return count;
-    }
-
-    ListNode *reverseKGroup(ListNode *head, int k)
+    ListNode *deleteDuplicates(ListNode *head)
     {
         if (head == NULL)
         {
             return NULL;
         }
 
-        // step 1: reverse k nodes
-        ListNode *currNode = head;
-        ListNode *nextNode, *prevNode = NULL;
-        int count = 0;
+        ListNode *temp = head;
 
-        while (count < k && currNode != NULL)
+        while (temp->next)
         {
-            nextNode = currNode->next;
-            currNode->next = prevNode;
-            prevNode = currNode;
-            currNode = nextNode;
-            count++;
+            if (temp->val == temp->next->val)
+            {
+                ListNode *nextNext = temp->next->next;
+                ListNode *nodeToDelete = temp->next;
+                temp->next = nextNext;
+                delete (nodeToDelete);
+            }
+            else
+            {
+                temp = temp->next;
+            }
         }
 
-        // step 2: recursion dekh lega
-        int length = getLengthOfLinkedList(nextNode);
-
-        if (nextNode != NULL && length >= k)
-        {
-            head->next = reverseKGroup(nextNode, k);
-        }
-        else
-        {
-            head->next = nextNode;
-        }
-
-        // step3: return head of reversed list
-        return prevNode;
+        return head;
     }
 };
 
@@ -73,15 +57,22 @@ int main()
     insertAtHead(head, 5);
     insertAtHead(head, 4);
     insertAtHead(head, 3);
+    insertAtHead(head, 3);
+    insertAtHead(head, 2);
     insertAtHead(head, 2);
     insertAtHead(head, 1);
+    insertAtHead(head, 1);
+
+    cout << "Linked List: " << endl;
     printLinkedList(head);
     cout << endl;
 
-    int k = 4;
-    ListNode *reversedHead = s.reverseKGroup(head, k);
-    cout << "Reverse Linked List with " << k << " groups:" << endl;
-    printLinkedList(reversedHead);
+    head = s.deleteDuplicates(head);
+
+    cout << "Linked List after removing duplicates: " << endl;
+    printLinkedList(head);
+    cout << endl;
+
     return 0;
 }
 
