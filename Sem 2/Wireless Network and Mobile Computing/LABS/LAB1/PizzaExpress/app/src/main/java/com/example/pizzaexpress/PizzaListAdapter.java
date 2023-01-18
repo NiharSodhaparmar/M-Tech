@@ -1,11 +1,13 @@
 package com.example.pizzaexpress;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,8 +39,13 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
 
         TextView tvName = convertView.findViewById(R.id.name);
         ImageView image = convertView.findViewById(R.id.image);
+        LinearLayout pizzaLayout = convertView.findViewById(R.id.pizza);
         tvName.setText(name);
         image.setImageResource(imgURL);
+        pizzaLayout.setOnClickListener(view -> {
+            Intent intent = new Intent(getContext(), MainActivity.class);
+            startActivity(intent);
+        });
 
         return convertView;
     }
