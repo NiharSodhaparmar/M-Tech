@@ -32,8 +32,6 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
         String name = getItem(position).getName();
         int imgURL = getItem(position).getImgURL();
 
-        Pizza pizza = new Pizza(name, imgURL);
-
         LayoutInflater inflater =  LayoutInflater.from(mContext);
         convertView = inflater.inflate(mResource, parent, false);
 
@@ -44,7 +42,7 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
         image.setImageResource(imgURL);
         pizzaLayout.setOnClickListener(view -> {
             Intent intent = new Intent(getContext(), MainActivity.class);
-            startActivity(intent);
+            mContext.startActivity(intent);
         });
 
         return convertView;

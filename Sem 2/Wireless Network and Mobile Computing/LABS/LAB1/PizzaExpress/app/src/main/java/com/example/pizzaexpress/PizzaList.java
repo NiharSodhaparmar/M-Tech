@@ -29,10 +29,6 @@ public class PizzaList extends AppCompatActivity {
         ArrayList<Pizza> pizzaList = new ArrayList<>();
         pizzaList.add(onion);
         pizzaList.add(margherita);
-        pizzaList.add(onion);
-        pizzaList.add(margherita);
-        pizzaList.add(onion);
-        pizzaList.add(margherita);
 
         PizzaListAdapter adapter = new  PizzaListAdapter(this, R.layout.pizza, pizzaList);
         pizzaListView.setAdapter(adapter);
