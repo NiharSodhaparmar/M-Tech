@@ -1,0 +1,10 @@
+Blockchain technology assignment #2 
+Read online resources and prepare a presentation on the following topics 
+
+Public ledgers
+Block in a blockchain
+Transaction
+Consensus
+Public vs private blockchain
+Permissioned model of blockchain 
+Security aspect of blockchain
