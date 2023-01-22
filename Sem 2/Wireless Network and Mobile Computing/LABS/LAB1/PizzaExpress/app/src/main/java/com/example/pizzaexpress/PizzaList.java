@@ -12,7 +12,7 @@ public class PizzaList extends AppCompatActivity {
     private ListView pizzaListView;
 
     private void setupUIviews(){
-        pizzaListView =  (ListView) findViewById(R.id.listview_pizza_id);
+        pizzaListView = findViewById(R.id.listview_pizza_id);
     }
 
     @Override

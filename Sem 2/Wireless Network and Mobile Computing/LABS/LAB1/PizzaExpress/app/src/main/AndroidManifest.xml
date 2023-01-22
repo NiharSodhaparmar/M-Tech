@@ -12,6 +12,9 @@
         android:theme="@style/Theme.PizzaExpress"
         tools:targetApi="31">
         <activity
+            android:name=".Topings"
+            android:exported="false" />
+        <activity
             android:name=".PizzaList"
             android:exported="false" />
         <activity
