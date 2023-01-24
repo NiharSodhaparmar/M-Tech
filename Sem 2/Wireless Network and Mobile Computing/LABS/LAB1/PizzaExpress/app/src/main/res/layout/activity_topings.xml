@@ -36,7 +36,8 @@
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toTopOf="@+id/idTopping"
             app:layout_constraintStart_toStartOf="@+id/idTopping"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            android:layout_marginLeft="20dp">
 
             <RadioButton
                 android:id="@+id/idSizeRBSmall"
@@ -94,7 +95,8 @@
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/idToppingCBCheese"
-            app:layout_constraintTop_toBottomOf="@+id/idToppingCBCheese" />
+            app:layout_constraintTop_toBottomOf="@+id/idToppingCBCheese"
+            android:layout_marginLeft="20dp"/>
 
         <CheckBox
             android:id="@+id/idToppingCBCheese"
@@ -105,7 +107,8 @@
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/idTopping"
-            app:layout_constraintTop_toBottomOf="@+id/idTopping" />
+            app:layout_constraintTop_toBottomOf="@+id/idTopping"
+            android:layout_marginLeft="20dp"/>
 
         <CheckBox
             android:id="@+id/idToppingCBPepperoni"
@@ -116,7 +119,8 @@
             android:textColor="@android:color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@+id/idToppingCBSpinach"
-            app:layout_constraintTop_toBottomOf="@+id/idToppingCBSpinach" />
+            app:layout_constraintTop_toBottomOf="@+id/idToppingCBSpinach"
+            android:layout_marginLeft="20dp"/>
 
         <FrameLayout
             android:layout_width="match_parent"

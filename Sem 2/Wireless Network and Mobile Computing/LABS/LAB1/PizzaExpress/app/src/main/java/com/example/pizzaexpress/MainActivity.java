@@ -13,12 +13,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText firstName;
     private EditText lastName;
 
-    private void setupUIviews(){
-        makeOrderBtn = findViewById (R.id.makeOrder_btn_id);
-        firstName = findViewById (R.id.firstName_id);
-        lastName = findViewById (R.id.lastName_id);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,13 +24,19 @@ public class MainActivity extends AppCompatActivity {
             String firstNameStr = firstName.getText().toString();
             String lastNameStr = lastName.getText().toString();
 
-            Intent intent = new Intent(getApplicationContext(), PizzaList.class);
+            Intent intent = new Intent(getApplicationContext(), VegNonVegSelection.class);
 
             intent.putExtra("firstName", firstNameStr);
             intent.putExtra("lastName", lastNameStr);
 
             startActivity(intent);
         });
+    }
+
+    private void setupUIviews(){
+        makeOrderBtn = findViewById (R.id.makeOrder_btn_id);
+        firstName = findViewById (R.id.firstName_id);
+        lastName = findViewById (R.id.lastName_id);
     }
 
 

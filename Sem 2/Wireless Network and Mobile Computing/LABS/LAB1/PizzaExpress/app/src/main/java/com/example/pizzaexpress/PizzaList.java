@@ -1,5 +1,6 @@
 package com.example.pizzaexpress;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -22,13 +23,31 @@ public class PizzaList extends AppCompatActivity {
 
         setupUIviews();
 
-        // Create pizza objects
-        Pizza onion = new Pizza("Onions Pizza",  R.drawable.onion_pizza);
-        Pizza margherita = new Pizza("Margherita Pizza", R.drawable.margherita_pizza);
+        Intent intent = getIntent();
+        String firstName = intent.getStringExtra("firstName");
+        String lastName = intent.getStringExtra("lastName");
+        String type = intent.getStringExtra("foodType");
 
         ArrayList<Pizza> pizzaList = new ArrayList<>();
-        pizzaList.add(onion);
-        pizzaList.add(margherita);
+
+        if (type.equals("veg"))
+        {
+            Pizza onion = new Pizza("Onions Pizza",  R.drawable.onion_pizza);
+            Pizza margherita = new Pizza("Margherita Pizza", R.drawable.margherita_pizza);
+
+            pizzaList.add(onion);
+            pizzaList.add(margherita);
+        }
+        else
+        {
+            Pizza onion = new Pizza("Onions Pizza Non Veg",  R.drawable.onion_pizza);
+            Pizza margherita = new Pizza("Margherita Pizza Non Veg", R.drawable.margherita_pizza);
+
+            pizzaList.add(onion);
+            pizzaList.add(margherita);
+        }
+
+        // Create pizza objects
 
         PizzaListAdapter adapter = new  PizzaListAdapter(this, R.layout.pizza, pizzaList);
         pizzaListView.setAdapter(adapter);
