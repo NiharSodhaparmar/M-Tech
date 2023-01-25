@@ -12,10 +12,6 @@ public class PizzaList extends AppCompatActivity {
 
     private ListView pizzaListView;
 
-    private void setupUIviews(){
-        pizzaListView = findViewById(R.id.listview_pizza_id);
-    }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +20,6 @@ public class PizzaList extends AppCompatActivity {
         setupUIviews();
 
         Intent intent = getIntent();
-        String firstName = intent.getStringExtra("firstName");
-        String lastName = intent.getStringExtra("lastName");
         String type = intent.getStringExtra("foodType");
 
         ArrayList<Pizza> pizzaList = new ArrayList<>();
@@ -40,16 +34,20 @@ public class PizzaList extends AppCompatActivity {
         }
         else
         {
-            Pizza onion = new Pizza("Onions Pizza Non Veg",  R.drawable.onion_pizza);
-            Pizza margherita = new Pizza("Margherita Pizza Non Veg", R.drawable.margherita_pizza);
+            Pizza nonVegSupreme = new Pizza("Non Veg Supreme",  R.drawable.non_veg_supreme_pizza);
+            Pizza chikenGoldenDelight = new Pizza("Chiken Golden Delight", R.drawable.chicken_golden_delight);
 
-            pizzaList.add(onion);
-            pizzaList.add(margherita);
+            pizzaList.add(chikenGoldenDelight);
+            pizzaList.add(nonVegSupreme);
         }
 
         // Create pizza objects
 
-        PizzaListAdapter adapter = new  PizzaListAdapter(this, R.layout.pizza, pizzaList);
+        PizzaListAdapter adapter = new  PizzaListAdapter(this, R.layout.pizza, pizzaList, intent);
         pizzaListView.setAdapter(adapter);
+    }
+
+    private void setupUIviews(){
+        pizzaListView = findViewById(R.id.listview_pizza_id);
     }
 }

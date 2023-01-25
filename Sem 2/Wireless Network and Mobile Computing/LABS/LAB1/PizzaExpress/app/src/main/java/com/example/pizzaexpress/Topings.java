@@ -1,8 +1,10 @@
 package com.example.pizzaexpress;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
@@ -11,20 +13,37 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Topings extends AppCompatActivity {
 
-    Pizza pizza;
-    TextView total;
-
-    double total_price;
+    private Button nextBtn;
+    private TextView total;
+    private Pizza pizza;
+    double totalPrice;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_topings);
+        setupUIviews();
 
+        Intent newIntent = getIntent();
+        String firstName = newIntent.getStringExtra("firstName");
+        String lastName = newIntent.getStringExtra("lastName");
+
+        nextBtn.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), Address.class);
+
+            intent.putExtra("totalPrice",  Double.toString(totalPrice));
+            intent.putExtra("firstName", firstName);
+            intent.putExtra("lastName", lastName);
+
+            startActivity(intent);
+        });
+    }
+
+    private void setupUIviews(){
+        nextBtn = findViewById (R.id.next_btn_id);
+        total = findViewById (R.id.idTotalPrice);
         pizza = new Pizza();
-        total = findViewById(R.id.idTotalPrice);
-
     }
 
     public void radioClicked(View view) {
@@ -82,8 +101,8 @@ public class Topings extends AppCompatActivity {
     }
 
     private double calculatePrice(){
-        total_price = pizza.getPizza_size_price() + pizza.getCheese_price() + pizza.getPepperoni_price() + pizza.getSpinach_price();
-        return total_price;
+        totalPrice = pizza.getPizza_size_price() + pizza.getCheese_price() + pizza.getPepperoni_price() + pizza.getSpinach_price();
+        return totalPrice;
     }
 
 }

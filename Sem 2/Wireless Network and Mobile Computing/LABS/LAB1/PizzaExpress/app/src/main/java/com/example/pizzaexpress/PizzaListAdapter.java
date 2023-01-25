@@ -19,11 +19,13 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
 
     private Context mContext;
     private int mResource;
+    private Intent mIntent;
 
-    public PizzaListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Pizza> objects) {
+    public PizzaListAdapter(@NonNull Context context, int resource, @NonNull ArrayList<Pizza> objects, Intent intent) {
         super(context, resource, objects);
         mContext = context;
         mResource = resource;
+        mIntent = intent;
     }
 
     @NonNull
@@ -41,8 +43,10 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
         tvName.setText(name);
         image.setImageResource(imgURL);
         pizzaLayout.setOnClickListener(view -> {
-            Intent intent = new Intent(getContext(), Topings.class);
-            mContext.startActivity(intent);
+            Intent newIntent = new Intent(getContext(), Topings.class);
+            newIntent.putExtra("firstName", mIntent.getStringExtra("firstName"));
+            newIntent.putExtra("lastName", mIntent.getStringExtra("lastName"));
+            mContext.startActivity(newIntent);
         });
 
         return convertView;
