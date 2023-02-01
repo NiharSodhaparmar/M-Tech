@@ -1,0 +1,3 @@
+Wmc lab practical #3
+Write an Android app that works as a attandance system based on the gps coordinates of the device 
+Your app must have connectivity with desktop or web server application that can log attandance data along with the gps coordinates

@@ -1,0 +1,5 @@
+Wmc lab assignment #2
+Write an android app that performs following operations
+1 Select an image from mobile gallery and display it
+2 performa basic image processing like rotate, flip, crop
+3 give additional functionality that can save the changes as a different image rather than modifying original one

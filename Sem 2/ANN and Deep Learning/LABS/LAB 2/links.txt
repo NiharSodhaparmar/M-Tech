@@ -1,0 +1,2 @@
+https://medium.com/analytics-vidhya/implementing-perceptron-learning-algorithm-to-solve-and-in-python-903516300b2f
+https://www.youtube.com/watch?v=xJio81x7gnE
