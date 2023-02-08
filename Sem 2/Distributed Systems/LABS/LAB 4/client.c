@@ -34,48 +34,6 @@ int main()
     while (1)
     {
 
-            bzero(buffer, 1024);
-            recv(sock, buffer, sizeof(buffer), 0);
-            printf("Server : %s\n", buffer);
-            if ((strncmp(buffer, "exit", 4)) == 0)
-            {
-                close(sock);
-                printf("Server disconnected\n\n");
-                exit(0);
-            }
-            if ((strncmp(buffer, "load", 4)) == 0)
-            {
-                bzero(buffer, 1024);
-                system("mpstat| grep -w \"all\"| awk '{o = 100-$NF; {print o} }' >> load.txt");
-                FILE *file;
-                char load[10];
-                float cpu_load;
-                file = fopen("load.txt", "r");
-                if (file == NULL)
-                {
-                    printf("file can't be opened \n");
-                }
-
-                fgets(load, 10, file);
-                fclose(file);
-                cpu_load = atof(load);
-                if (cpu_load > 70)
-                {
-                    strcpy(buffer, "Client is overload\n");
-                }
-                else if (30 > cpu_load && 70 < cpu_load)
-                {
-                    strcpy(buffer, "Client is moderately loaded\n");
-                }
-                else
-                {
-                    strcpy(buffer, "Client is lightly loaded\n");
-                }
-                printf("Client : %s\n", buffer);
-                send(sock, buffer, strlen(buffer), 0);
-            }
-
-
         bzero(buffer, 1024);
         printf("Send message to Server : ");
         scanf("%[^\n]%*c", buffer);
@@ -88,9 +46,48 @@ int main()
             printf("Server disconnected\n\n");
             exit(0);
         }
-        
-            
-        
+    receive:
+        bzero(buffer, 1024);
+        recv(sock, buffer, sizeof(buffer), 0);
+        printf("Server : %s\n", buffer);
+        if ((strncmp(buffer, "exit", 4)) == 0)
+        {
+            close(sock);
+            printf("Server disconnected\n\n");
+            exit(0);
+        }
+        if ((strncmp(buffer, "load", 4)) == 0)
+        {
+            bzero(buffer, 1024);
+            system("mpstat| grep -w \"all\"| awk '{o = 100-$NF; {print o} }' >> load.txt");
+            FILE *file;
+            char load[10];
+            float cpu_load;
+            file = fopen("load.txt", "r");
+            if (file == NULL)
+            {
+                printf("file can't be opened \n");
+            }
+
+            fgets(load, 10, file);
+            fclose(file);
+            cpu_load = atof(load);
+            if (cpu_load > 70)
+            {
+                strcpy(buffer, "Client is overload\n");
+            }
+            else if (30 > cpu_load && 70 < cpu_load)
+            {
+                strcpy(buffer, "Client is moderately loaded\n");
+            }
+            else
+            {
+                strcpy(buffer, "Client is lightly loaded\n");
+            }
+            printf("Client : %s\n", buffer);
+            send(sock, buffer, strlen(buffer), 0);
+            goto receive;
+        }
     }
 
     return 0;

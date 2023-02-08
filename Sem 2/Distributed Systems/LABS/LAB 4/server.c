@@ -43,7 +43,6 @@ int main()
 
     addr_size = sizeof(client_addr);
     client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
-    send(client_sock, "Welcome\n", strlen("Welcome\n"), 0);
     printf("[+]Client Connected.\n");
     while (1)
     {
@@ -58,55 +57,52 @@ int main()
             client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
             printf("[+]Client Connected.\n");
         }
-        else
+
+        if ((strncmp(buffer, "load", 4)) == 0)
         {
-
-            if ((strncmp(buffer, "load", 4)) == 0)
+            bzero(buffer, 1024);
+            printf("Send message to client %d : ", client_sock);
+            system("mpstat| grep -w \"all\"| awk '{o = 100-$NF; {print o} }' >> load.txt");
+            FILE *file;
+            char load[10];
+            float cpu_load;
+            file = fopen("load.txt", "r");
+            if (file == NULL)
             {
-                bzero(buffer, 1024);
-                printf("Send message to client %d : ", client_sock);
-                system("mpstat| grep -w \"all\"| awk '{o = 100-$NF; {print o} }' >> load.txt");
-                FILE *file;
-                char load[10];
-                float cpu_load;
-                file = fopen("load.txt", "r");
-                if (file == NULL)
-                {
-                    printf("file can't be opened \n");
-                }
+                printf("file can't be opened \n");
+            }
 
-                fgets(load, 10, file);
-                fclose(file);
-                cpu_load = atof(load);
-                if (cpu_load > 70)
-                {
-                    strcpy(buffer, "Server is overload\n");
-                }
-                else if (30 > cpu_load && 70 < cpu_load)
-                {
-                    strcpy(buffer, "Server is moderately loaded\n");
-                }
-                else
-                {
-                    strcpy(buffer, "Server is lightly loaded\n");
-                }
+            fgets(load, 10, file);
+            fclose(file);
+            cpu_load = atof(load);
+            if (cpu_load > 70)
+            {
+                strcpy(buffer, "Server is overload\n");
+            }
+            else if (30 > cpu_load && 70 < cpu_load)
+            {
+                strcpy(buffer, "Server is moderately loaded\n");
             }
             else
             {
-                bzero(buffer, 1024);
-                printf("Send message to client %d : ", client_sock);
-                scanf("%[^\n]%*c", buffer);
-                // strcpy(buffer, "Hi this is server . have a nice day");
+                strcpy(buffer, "Server is lightly loaded\n");
             }
             printf("server : %s\n", buffer);
             send(client_sock, buffer, strlen(buffer), 0);
-            if ((strncmp(buffer, "exit", 4)) == 0)
-            {
-                close(client_sock);
-                printf("[+]Client disconnected\n\n");
-                client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
-                printf("[+]Client Connected.\n");
-            }
+            continue;
+        }
+        bzero(buffer, 1024);
+        printf("Send message to client %d : ", client_sock);
+        scanf("%[^\n]%*c", buffer);
+        // strcpy(buffer, "Hi this is server . have a nice day");
+        printf("server : %s\n", buffer);
+        send(client_sock, buffer, strlen(buffer), 0);
+        if ((strncmp(buffer, "exit", 4)) == 0)
+        {
+            close(client_sock);
+            printf("[+]Client disconnected\n\n");
+            client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
+            printf("[+]Client Connected.\n");
         }
     }
 
