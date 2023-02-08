@@ -1,58 +1,52 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
-#include <sys/types.h>
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <netdb.h> 
+#include <unistd.h>
+#include <arpa/inet.h>
 
+int main()
+{
+    char *ip = "127.0.0.1";
+    int port = 1234;
 
-int main(int argc, char *argv[]) {
+    int sock;
+    struct sockaddr_in addr;
+    socklen_t addr_size;
+    char buffer[1024];
+    int n;
 
-    int sockfd, portno, n;
-    struct sockaddr_in serv_addr;
-    struct hostent *server;
-
-    char buffer[256];
-
-    if (argc < 3) {
-       printf("usage %s hostname port\n", argv[0]);
-
+    sock = socket(AF_INET, SOCK_STREAM, 0);
+    if (n < 0)
+    {
+        perror("[ - ]Socket error");
+        exit(1);
     }
-    portno = atoi(argv[2]);
+    printf("[+]TCP server socket created.\n");
 
-    sockfd = socket(AF_INET, SOCK_STREAM, 0);
-    if (sockfd < 0) 
-        printf("ERROR opening socket");
-    server = gethostbyname(argv[1]);
+    memset(&addr, '\0', sizeof(addr));
+    addr.sin_family = AF_INET;
+    addr.sin_port = port;
+    addr.sin_addr.s_addr = inet_addr(ip);
 
-    if (server == NULL) {
-        printf("ERROR, no such host\n");
+    connect(sock, (struct sockaddr *)&addr, sizeof(addr));
+    printf("Connected to the server.\n");
+
+    while (1)
+    {
+
+        bzero(buffer, 1024);
+        printf("Send message to Server : ");
+        scanf("%[^\n]%*c", buffer);
+        // strcpy(buffer , "Hello This is client");
+        printf("Client : %s\n", buffer);
+        send(sock, buffer, strlen(buffer), 0);
+        if ((strncmp(buffer, "exit", 4)) == 0)
+        {
+            close(sock);
+            printf("Server disconnected\n\n");
+            exit(0);
+        }
     }
 
-    bzero((char *) &serv_addr, sizeof(serv_addr));
-    serv_addr.sin_family = AF_INET;
-    bcopy((char *)server->h_addr, 
-         (char *)&serv_addr.sin_addr.s_addr,
-         server->h_length);
-
-    serv_addr.sin_port = htons(portno);
-
-    if (connect(sockfd,(struct sockaddr *) &serv_addr,sizeof(serv_addr)) < 0) 
-        printf("ERROR connecting");
-    printf("Please enter the message: ");
-    bzero(buffer,256);
-    fgets(buffer,255,stdin);
-
-    n = write(sockfd,buffer,strlen(buffer));
-    if (n < 0) 
-         printf("ERROR writing to socket");
-    bzero(buffer,256);
-    n = read(sockfd,buffer,255);
-    if (n < 0) 
-         printf("ERROR reading from socket");
-    printf("%s\n",buffer);
-    close(sockfd);
     return 0;
 }
