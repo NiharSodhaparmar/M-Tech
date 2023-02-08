@@ -43,6 +43,7 @@ int main()
 
     addr_size = sizeof(client_addr);
     client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
+    send(client_sock, "Welcome\n", strlen("Welcome\n"), 0);
     printf("[+]Client Connected.\n");
     while (1)
     {
