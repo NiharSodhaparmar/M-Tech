@@ -10,6 +10,7 @@ public class VegNonVegSelection extends AppCompatActivity {
 
     private Button vegBtn;
     private  Button nonVegBtn;
+    private  Button goToCartBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,27 +18,20 @@ public class VegNonVegSelection extends AppCompatActivity {
         setContentView(R.layout.activity_veg_non_veg_selection);
         setupUIviews();
 
-        Intent intent = getIntent();
-        String firstName = intent.getStringExtra("firstName");
-        String lastName = intent.getStringExtra("lastName");
-
         vegBtn.setOnClickListener(view -> {
             Intent newIntent = new Intent(getApplicationContext(), PizzaList.class);
-
-            newIntent.putExtra("firstName", firstName);
-            newIntent.putExtra("lastName", lastName);
             newIntent.putExtra("foodType", "veg");
-
             startActivity(newIntent);
         });
 
         nonVegBtn.setOnClickListener(view -> {
             Intent newIntent = new Intent(getApplicationContext(), PizzaList.class);
-
-            newIntent.putExtra("firstName", firstName);
-            newIntent.putExtra("lastName", lastName);
             newIntent.putExtra("foodType", "nonVeg");
+            startActivity(newIntent);
+        });
 
+        goToCartBtn.setOnClickListener(view -> {
+            Intent newIntent = new Intent(getApplicationContext(), OrderSummary.class);
             startActivity(newIntent);
         });
 
@@ -46,5 +40,6 @@ public class VegNonVegSelection extends AppCompatActivity {
     private void setupUIviews(){
         vegBtn = findViewById (R.id.veg_btn_id);
         nonVegBtn = findViewById (R.id.non_veg_btn_id);
+        goToCartBtn = findViewById(R.id.go_to_cart_btn_id);
     }
 }

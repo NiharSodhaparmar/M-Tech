@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -23,24 +24,20 @@ public class Address extends AppCompatActivity {
 
         setupUIviews();
 
-        Intent newIntent = getIntent();
-        String firstName = newIntent.getStringExtra("firstName");
-        String lastName = newIntent.getStringExtra("lastName");
-        String totalPrice = newIntent.getStringExtra("totalPrice");
-        String pizzaName = newIntent.getStringExtra("pizzaName");
-
         confirmOrderBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), OrderSummary.class);
+            Intent intent = new Intent(getApplicationContext(), MainActivity.class);
 
-            intent.putExtra("firstName", firstName);
-            intent.putExtra("lastName", lastName);
-            intent.putExtra("totalPrice", totalPrice);
-            intent.putExtra("address1", address1.getText().toString());
-            intent.putExtra("address2", address2.getText().toString());
-            intent.putExtra("pincode", pincode.getText().toString());
-            intent.putExtra("district", district.getText().toString());
-            intent.putExtra("state", state.getText().toString());
-            intent.putExtra("pizzaName", pizzaName);
+//            intent.putExtra("firstName", firstName);
+//            intent.putExtra("lastName", lastName);
+//            intent.putExtra("totalPrice", totalPrice);
+//            intent.putExtra("address1", address1.getText().toString());
+//            intent.putExtra("address2", address2.getText().toString());
+//            intent.putExtra("pincode", pincode.getText().toString());
+//            intent.putExtra("district", district.getText().toString());
+//            intent.putExtra("state", state.getText().toString());
+//            intent.putExtra("pizzaName", pizzaName);
+
+            Toast.makeText(getApplicationContext(), "Order Placed Successfully", Toast.LENGTH_SHORT).show();
 
             startActivity(intent);
         });

@@ -8,15 +8,19 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Topings extends AppCompatActivity {
 
-    private Button nextBtn;
+    private Button addToCartBtn;
+    private Button goToCart;
     private TextView total;
     private Pizza pizza;
     double totalPrice;
+    private DBHandler dbHandler;
+    int pizzaQuantity = 1;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -26,24 +30,38 @@ public class Topings extends AppCompatActivity {
         setupUIviews();
 
         Intent newIntent = getIntent();
-        String firstName = newIntent.getStringExtra("firstName");
-        String lastName = newIntent.getStringExtra("lastName");
-        String pizzaName = newIntent.getStringExtra("pizzaName");
+        String pizzaName = newIntent.getStringExtra("pizzaName");;
 
-        nextBtn.setOnClickListener(view -> {
-            Intent intent = new Intent(getApplicationContext(), Address.class);
+        addToCartBtn.setOnClickListener(view -> {
+            dbHandler = new DBHandler(getApplicationContext());
 
-            intent.putExtra("totalPrice",  Double.toString(totalPrice));
-            intent.putExtra("firstName", firstName);
-            intent.putExtra("lastName", lastName);
-            intent.putExtra("pizzaName", pizzaName);
+            if (pizzaName.isEmpty() && pizzaQuantity == 0 && totalPrice == 0) {
+                Toast.makeText(getApplicationContext(), "Order Not Valid..", Toast.LENGTH_SHORT).show();
+                return;
+            }
+
+            // on below line we are calling a method to add new
+            // course to sqlite data and pass all our values to it.
+            dbHandler.addNewPizza(pizzaName, pizzaQuantity+"", (int)totalPrice+"");
+
+            // after adding the data we are displaying a toast message.
+            Toast.makeText(getApplicationContext(), "Pizza has been added to cart.", Toast.LENGTH_SHORT).show();
+
+            Intent intent = new Intent(getApplicationContext(), VegNonVegSelection.class);
+
+            startActivity(intent);
+        });
+
+        goToCart.setOnClickListener(view -> {
+            Intent intent = new Intent(getApplicationContext(), OrderSummary.class);
 
             startActivity(intent);
         });
     }
 
     private void setupUIviews(){
-        nextBtn = findViewById (R.id.next_btn_id);
+        addToCartBtn = findViewById (R.id.next_btn_id);
+        goToCart = findViewById(R.id.go_to_cart);
         total = findViewById (R.id.idTotalPrice);
         pizza = new Pizza();
     }

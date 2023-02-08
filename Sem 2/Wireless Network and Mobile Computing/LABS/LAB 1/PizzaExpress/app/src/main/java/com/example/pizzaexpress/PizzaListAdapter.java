@@ -44,8 +44,6 @@ public class PizzaListAdapter extends ArrayAdapter<Pizza> {
         image.setImageResource(imgURL);
         pizzaLayout.setOnClickListener(view -> {
             Intent newIntent = new Intent(getContext(), Topings.class);
-            newIntent.putExtra("firstName", mIntent.getStringExtra("firstName"));
-            newIntent.putExtra("lastName", mIntent.getStringExtra("lastName"));
             newIntent.putExtra("pizzaName", name);
             mContext.startActivity(newIntent);
         });
