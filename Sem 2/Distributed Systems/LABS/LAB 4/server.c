@@ -9,7 +9,7 @@
 int main()
 {
     char *ip = "127.0.0.1";
-    int port = 1234;
+    int port = 5000;
 
     int server_sock, client_sock;
     struct sockaddr_in server_addr, client_addr;
@@ -20,10 +20,11 @@ int main()
     server_sock = socket(AF_INET, SOCK_STREAM, 0);
     if (server_sock < 0)
     {
-        perror("[-]Socket error");
+        perror("Socket error......\n");
+        printf("#######################################################\n");
+        printf("\n");
         exit(1);
     }
-    printf("[+] TCP server socket created\n");
 
     memset(&server_addr, '\0', sizeof(server_addr));
     server_addr.sin_family = AF_INET;
@@ -33,29 +34,43 @@ int main()
     n = bind(server_sock, (struct sockaddr *)&server_addr, sizeof(server_addr));
     if (n < 0)
     {
-        perror("[ - ]Bind error");
+        perror("Bind error......");
+        printf("#######################################################\n");
+        printf("\n");
         exit(1);
     }
-    printf("[+]Bind to the port number : %d\n", port);
 
     listen(server_sock, 5);
-    printf("Listening....\n");
+    printf("Serever running......\n");
+    printf("#######################################################\n");
+    printf("\n");
 
     addr_size = sizeof(client_addr);
     client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
-    printf("[+]Client Connected.\n");
+    printf("Client Connected......\n");
+    printf("#######################################################\n");
+    printf("\n");
+
     while (1)
     {
         bzero(buffer, 1024);
         recv(client_sock, buffer, sizeof(buffer), 0);
-        printf("client : %s\n", buffer);
+        printf("Message from client is : %s\n", buffer);
+        printf("\n");
 
         if ((strncmp(buffer, "exit", 4)) == 0)
         {
+            // When client send exit request
             close(client_sock);
-            printf("[+]Client disconnected\n\n");
+            printf("Client disconnected......\n");
+            printf("#######################################################\n");
+            printf("\n");
+
+            // For client to enter server again so not stuck here
             client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
-            printf("[+]Client Connected.\n");
+            printf("Client Connected......\n");
+            printf("#######################################################\n");
+            printf("\n");
         }
 
         if ((strncmp(buffer, "load", 4)) == 0)
@@ -69,7 +84,9 @@ int main()
             file = fopen("load.txt", "r");
             if (file == NULL)
             {
-                printf("file can't be opened \n");
+                printf("file can't be opened......\n");
+                printf("#######################################################\n");
+                printf("\n");
             }
 
             fgets(load, 10, file);
@@ -87,22 +104,35 @@ int main()
             {
                 strcpy(buffer, "Server is lightly loaded\n");
             }
-            printf("server : %s\n", buffer);
+
+            printf("Your message sended to client is : \n");
+            printf("%s", buffer);
+            printf("\n\n");
             send(client_sock, buffer, strlen(buffer), 0);
+
             continue;
         }
+
         bzero(buffer, 1024);
-        printf("Send message to client %d : ", client_sock);
+        printf("Enter message to send client %d (exit for quit, load for get load) : ", client_sock);
         scanf("%[^\n]%*c", buffer);
-        // strcpy(buffer, "Hi this is server . have a nice day");
-        printf("server : %s\n", buffer);
+
+        printf("Your message sended to client is : \n");
+        printf("%s", buffer);
+        printf("\n\n");
         send(client_sock, buffer, strlen(buffer), 0);
+
         if ((strncmp(buffer, "exit", 4)) == 0)
         {
             close(client_sock);
-            printf("[+]Client disconnected\n\n");
+            printf("Client disconnected......\n");
+            printf("#######################################################\n");
+            printf("\n");
+
             client_sock = accept(server_sock, (struct sockaddr *)&client_addr, &addr_size);
-            printf("[+]Client Connected.\n");
+            printf("Client Connected......\n");
+            printf("#######################################################\n");
+            printf("\n");
         }
     }
 
