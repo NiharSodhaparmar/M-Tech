@@ -1,0 +1,186 @@
+SigFox wireless technology is based on LTN (Low Throughput Network). 
+It is wide area network based technology which supports low data rate communication over larger distances. 
+It is used for M2M and IoT applications which transmits only few bytes per day.
+
+SigFox is pioneer in LPWAN technologies for large scale development.
+LPWAN is also known as Low Power Wide Area Network. It is a wireless wide area network which varies from 2 km to 1000 km range.
+
+SigFox is one of the perimeter organizations which utilizes LPWAN to interface gadgets to the internet.
+This technology remotely interfaces battery operated devices and sensors to the internet.
+
+SigFox offers an end to end network which sends small data packets from sensors through the network and cloud 
+to connect the sensors to the digital world.
+
+Sigfox provides the network, the technology and the expert ecosystem, which
+are necessary to help companies and organizations make the most of their IoT
+ambitions.
+
+SigFox uses less power and is effective over long distances compared to connection 
+protocols such as Bluetooth and Wi-Fi which works best in the short range and use more power.
+
+SigFox Network architecture consists of three important elements 
+1. objects 
+2. base station and
+3. the sigfox cloud
+
+1. Objects 
+    objects are also generally called devices which include sensors these objects send their data to a base station.
+
+2. base station
+    base stations are local sigfox antennas that receive messages from emitting devices and forwards them to the sigfox cloud.
+
+3. the sigfox cloud
+    sigfox cloud is a central hub where all the information is stored and data processing takes place
+
+
+Flat network architecture
+    The data is sent over the air to the base stations, then goes through the backhaul.
+    The backhaul generally uses DSL connectivity and 3G or 4G as a back-up. When one
+    of the two is not available, satellite connectivity can be used as an alternative backup technology.
+    
+    The back-end handles message processing. There are potentially lots of replicates
+    of the same message that arrive on the core network but only one should be stored.
+    The core network servers also monitor the status of the network and manages the
+    base stations globally.
+    
+    The network infrastructure also stores the messages in two locations: the metadata
+    can be used for building services on one hand and the customers’ messages so that
+    customers can retrieve them later on the other hand.
+    
+    Finally, the web interface and the API allow customers to access their messages.
+    They can either access the platform through their web browser or use a REST API to
+    synchronize them with their IT system and push downlink messages to the device.
+
+SigFox technology principles
+1 Ultra-Narrow Band (UNB)
+    Sigfox is using 192KHz of the publicly available band to exchange messages over
+    the air. The modulation is Ultra-Narrow band. Each message is 100 Hz wide and
+    transferred with a data rate of 100 or 600 bits per second depending on the region.
+
+    This is what enables the Sigfox base stations to communicate over long distances without being impacted by the noise.
+
+2. Random access
+    The random access is a key feature to achieve a high quality of service. The
+    transmission is unsynchronized between the network and the device. The device
+    emits a message on a random frequency and then sends 2 replicas on different
+    frequencies and time, which is called “time and frequency diversity”.
+
+3. Cooperative reception
+    The principle of the cooperative reception is that an object is not attached to a
+    specific base station unlike cellular protocols. The emited message is received by
+    any base stations that are nearby and on average the number of base stations is 3.
+    This is called “spatial diversity”.
+
+4. Small messages
+    In order to address the cost and autonomy constraints of remote objects, Sigfox
+    has designed a communication protocol for small messages. The message size goes
+    from 0 to 12 bytes. A 12-byte payload is enough to transfer sensor data, the status
+    of an event like an alert, GPS coordinates or even application data.
+    We have listed some payload size examples:
+
+    GPS coordinates 6 bytes
+    Temperature 2 bytes
+    Speed reporting 1 bytes
+    Object status 1 byte
+    «Keep alive» payload 0 byte
+
+
+High network capacity
+The massive capacity of the infrastructure of the Sigfox network is the
+result of the factors described earlier:
+-> ultra-narrow band modulation has the benefit of being spectrum efficient and
+resistant to interferers as all of the energy is concentrated into a very small
+bandwidth;
+-> frequency and time diversity introduced by the random access;
+-> spatial diversity due to the overlapping network cells.
+
+High energy efficiency
+->  No pairing is required, which means that no synchronization messages are
+exchanged between the object and the base station before transmitting the data.
+This is a big advantage compared to other technologies which all include those
+additional steps.
+-> Also the idle consumption is very low, often a few nanoamperes, which makes it
+almost negligible.
+
+Long range (not want to include)
+The main competitive advantage of the Sigfox technology is on the deployment
+with a large coverage and a limited number of base stations:
+
+Resilience to interference
+-> Sigfox utilizes 192KHz Ultra Barrow Band (UNB) integrated with the base station’s spatial diversity 
+of +20 dB which facilitate its unique anti-jamming features.
+-> the low noise overlap induces intrinsic ruggedness to the Ultra-Narrow band. 
+As a result, for a message to be transmitted, the signal should have at least 8 dB.
+
+Sigfox technology presents unique anti-jamming capabilities due to UNB intrinsic
+ruggedness coupled with spatial diversity of the base stations.
+UNB is extremely robust in an environment with other signals, including spread
+spectrum signals. However, spread spectrum networks are affected by UNB signals.
+Ultra Narrow Band is therefore the best choice to operate in the public industrial,
+scientific and medical (ISM) band.
+The high resilience to interferers is key to operate efficiently in the public ISM band.
+The best proof of the high resilience to interferers is the capability to transmit
+despite the presence of jamming signals. Ultra-narrow band modulation has some
+intrinsic ruggedness because the overlap with the noise is very low. For a message
+to be received, the signal should be at least 8 dB above the noise floor.
+
+Sigfox security and privacy
+Sigfox has an inbuilt firewall that restricts IoT objects to connect or communicate using the internet protocol.
+To communicate over the internet, an object sends a radio message that is picked up by the available access stations.
+The access station then relays the message to the Sigfox support system that in turn transmits it to the specified destination.
+The Sigfox support system also transmits the response to the sender object through the base stations.
+The security firewall thus secures the IoT objects from internet related attacks.
+
+Data security
+The Sigfox architecture provides a security mechanism that guarantees secure data authentication and replay avoidance.
+
+The Sigfox’s IoT chain involves authentication keys stored which are stored by devices and the customer, this key will be required to access the data stored by the Sigfox System.
+Sigfox’s data mechanisms guarantees security within the diverse ecosystem and different local regulations.
+The authentication key for every device is unique meaning that a compromise of a device’s authentication security key does not affect the security of other devices.
+
+Application of Sigfox
+People, Goods or other type of Asset tracking.
+Smart metering communication in the energy sector.
+Communication of mHealth applications
+Management of automotive communication in the transport sector
+Remote control and monitoring.
+Security.
+
+
+
+https://www.sigfox.com/technology/
+https://build.sigfox.com/sigfox#network-overview
+https://www.rfwireless-world.com/Tutorials/Sigfox-tutorial.html
+https://www.avnet.com/wps/wcm/connect/onesite/03aebfe2-98f7-4c28-be5f-90638c898009/sigfox-technical-overview.pdf?MOD=AJPERES&CVID=magVa.N&CVID=magVa.N&CVID=magVa.N#:~:text=Sigfox%20is%20using%20192KHz%20of,second%20depending%20on%20the%20region.
+https://circuitdigest.com/article/what-is-sigfox-basics-architecture-and-security-features#:~:text=Application%20of%20Sigfox&text=People%2C%20Goods%20or%20other%20type,communication%20in%20the%20transport%20sector
+https://www.youtube.com/watch?v=jcYoNvkorOY&t=5s
+https://en.wikipedia.org/wiki/Sigfox
+    
+
+sigfox follows a top down approach 
+the company owns all of its technology from back end data and cloud server to the endpoint software the end points are an open market 
+it gives away the technology to any vendor until and unless some business terms are agreed upon thus sigfox is also known as Uber of IoT 
+here are some technical differences between a few LP van technologies these technical aspects make each of the technology stand up but 
+in a different way as one technology cannot determine its feasibility for specific applications one technology cannot serve all purposes 
+and so each one of them is better suited for different use cases you can also check out our previous learned technology in five minute 
+videos on NBA IoT and Laura from the video description to know more about these topics so how does 
+
+
+any sigfox network uses three technologies to achieve its features they have differential phase shift key frequency shift key and ultra 
+narrow band technology if you're not familiar with these terms please check out the links given in the video description to learn more 
+about them before proceeding uplink signals generally encounter more interference than downlink signals as differential phase shift key 
+is bandwidth efficient compared to frequency shift key the power is concentrated and more robustness to indifference is gained since 
+interference is not much of a concern for downlink signals the main goal is to reach as many applications as efficiently as possible 
+frequency shift key offers more bandwidth thereby giving more space to send a signal to reach more applications ultra narrow band is 
+a technology where signals are sent very infrequently thereby requiring very little power due to the use of differential phase shift
+ keying frequency shift keying and ultra narrowband technology sigfox is capable of sending data over long ranges now you might be 
+ wondering why we should use sigfox for IoT applications sigfox offers a genuine communication solution where the cloud handles all 
+ the networking and computing complexity one it is easy to install no cables or complicated setups are required to it is economical 
+ radio modules required for sigfox are less expensive when compared to other LP van technologies three it is energy efficient seek fox 
+ is the best option for simple devices due to the low data rate battery life of devices is prolonged 4 it can be used for long range 
+ communication sigfox has a data transmission capability of approximately 10 kilometers in urban settings and about 40 kilometers in 
+ rural areas owing to all the advantages sigfox can surely be deployed in various applications let's take a look at some of them one 
+ energy related communications example smart metering to measure and report meter readings for energy consumption transport example 
+ automotive management three healthcare example temperature monitoring for vaccines and sleep monitoring for home and consumer goods 
+ examine smart bottle caps with reminders to stay hydrated 5 security examined security cameras with face recognition and alerts 
+ sigfox is already operational and has 16 million devices connected to its network that is all
