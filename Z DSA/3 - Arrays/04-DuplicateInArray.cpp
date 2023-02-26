@@ -11,6 +11,8 @@ There is a single value  present in array is twice. Find duplicate in array.
 8 7 2 5 4 7 1 3 6
 */
 
+// https://www.codingninjas.com/codestudio/problems/duplicate-in-array_893397
+
 int findDuplicate(vector<int> &arr)
 {
     int ans = 0;

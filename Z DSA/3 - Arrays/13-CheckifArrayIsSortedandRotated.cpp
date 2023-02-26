@@ -19,6 +19,8 @@ Explanation: There is no sorted array once rotated that can make nums.
 
 */
 
+// https://leetcode.com/problems/check-if-array-is-sorted-and-rotated/
+
 class Solution
 {
 public:

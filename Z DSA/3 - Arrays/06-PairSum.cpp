@@ -26,6 +26,9 @@ output
 
 */
 
+// https://www.codingninjas.com/codestudio/problems/pair-sum_697295
+// https://leetcode.com/problems/two-sum/
+
 vector<vector<int>> pairSum1(vector<int> &arr, int s)
 {
     vector<vector<int>> ans;

@@ -11,6 +11,9 @@ ans 2 2 3
 1, 2, 3
 ans 3
 */
+
+// https://www.codingninjas.com/codestudio/problems/intersection-of-2-arrays_1082149
+
 vector<int> findArrayIntersection(vector<int> &arr1, int n, vector<int> &arr2, int m)
 {
     int i = 0;
