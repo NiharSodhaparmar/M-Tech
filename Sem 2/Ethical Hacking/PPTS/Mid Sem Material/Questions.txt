@@ -1,9 +1,10 @@
 EH mid sem
-What are the different attack vectors through which the attacker can attack the information system? Explain them.
+What are the different attack vectors through which the attacker can attack the information system? Explain them. 
 https://www.upguard.com/blog/attack-vector
 
 Classify the categories of information security threat. Explain each category in detail.
 https://www.geeksforgeeks.org/threats-to-information-security/
+
 
 What is Hacktivism? Explain it.
 https://www.techtarget.com/searchsecurity/definition/hacktivism?amp=1

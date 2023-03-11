@@ -49,7 +49,7 @@ int main()
     //     printf("%d", (num << i & 1 << 31 ? 1 : 0));
     // }
 
-    bool y = (int)(1.1 + 0.1) == int(1.1);
+    // bool y = (int)(1.1 + 0.1) == int(1.1);
 
-    printf("%d", y);
+    // printf("%d", y);
 }
