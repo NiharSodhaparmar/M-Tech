@@ -1,0 +1,223 @@
+Missile Name,Missile Type,Facility Name,Facility Location,Facility Latitude,Facility Longitude,Landing Location,Apogee,Distance Travelled,Confirmation Status,Test Outcome,hours,minutes,seconds,month,day,year
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,9,1984
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,9,1984
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Success,0,0,0,4,9,1984
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,9,27,1984
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Failure,0,0,0,9,27,1984
+Scud-B,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Failure,0,0,0,9,27,1984
+Unknown,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,27,1986
+Nodong,MRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,150.0,325.8018018018018,Unconfirmed,Failure,0,0,0,5,27,1990
+Scud-C,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Success,0,0,0,6,27,1990
+Scud-C,SRBM,Chihari Missile Base,"Chiha-ri , Kangwon Province, (North Korea)",38.62333,126.6847,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,27,1991
+Nodong,MRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Failure,0,0,0,6,27,1992
+Nodong,MRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,150.0,500.0,Confirmed,Success,0,0,0,5,29,1993
+Scud-C,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Success,0,0,0,5,29,1993
+Scud-C,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Success,0,0,0,5,29,1993
+Scud-C,SRBM,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,200.0,325.8018018018018,Confirmed,Success,0,0,0,5,30,1993
+Taepodong-1,SLV,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,330km east of Hachinohe and 4000 km out into Pacific Ocean,222.3963963963964,1380.0,Confirmed,Failure,0,0,0,8,31,1998
+Unha,SLV,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Sea of Japan or East Sea,40.0,325.8018018018018,Confirmed,Failure,0,0,0,7,5,2006
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2006
+Unha,SLV,Tonghae Satellite Launching Ground,"Hwadae County, North Hamgyong Province",40.8499966,129.666664,Pacific Ocean,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,4,5,2009
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Nodong,MRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Scud-C,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,7,5,2009
+Unha-3,SLV,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Pacific Ocean,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,4,13,2012
+Unha-3,SLV,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,581.0,325.8018018018018,Confirmed,Success,0,0,0,12,12,2012
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,18,2013
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,18,2013
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,18,2013
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,19,2013
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,20,2013
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Unconfirmed,Success,0,0,0,5,20,2013
+Scud-B,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,80.0,200.0,Confirmed,Success,0,0,0,2,27,2014
+Scud-B,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,200.0,Confirmed,Success,0,0,0,2,27,2014
+Scud-B,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,200.0,Confirmed,Success,0,0,0,2,27,2014
+Scud-B,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,200.0,Confirmed,Success,0,0,0,2,27,2014
+Scud-C,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,150.0,500.0,Confirmed,Success,0,0,0,3,3,2014
+Scud-C,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,500.0,Confirmed,Success,0,0,0,3,3,2014
+Nodong,MRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,150.0,650.0,Confirmed,Success,0,0,0,3,26,2014
+Nodong,MRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,150.0,650.0,Confirmed,Success,0,0,0,3,26,2014
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,6,26,2014
+Scud-C,SRBM,Masikryong,"Kangwon Province, (North Korea)",39.065962,127.250257,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,6,29,2014
+Scud-C,SRBM,Masikryong,"Kangwon Province, (North Korea)",39.065962,127.250257,Sea of Japan or East Sea,150.0,325.8018018018018,Confirmed,Success,0,0,0,6,29,2014
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,100.0,500.0,Confirmed,Success,0,0,0,7,9,2014
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,100.0,500.0,Confirmed,Success,0,0,0,7,9,2014
+Scud-C,SRBM,Kaesong,North Hwanghae Province,37.9382,126.5878,Sea of Japan or East Sea,120.0,500.0,Confirmed,Success,0,0,0,7,13,2014
+Scud-C,SRBM,Kaesong,North Hwanghae Province,37.9382,126.5878,Sea of Japan or East Sea,120.0,500.0,Confirmed,Success,0,0,0,7,13,2014
+Scud-C,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,222.3963963963964,500.0,Confirmed,Success,0,0,0,7,26,2014
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,8,14,2014
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,9,1,2014
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,9,6,2014
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,2,8,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,2,8,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,2,8,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,2,8,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,2,8,2015
+Scud-C,SRBM,Nampo,South Pyongan Province,38.7523,125.3247,Sea of Japan or East Sea,134.0,490.0,Confirmed,Success,0,0,0,3,1,2015
+Scud-C,SRBM,Nampo,South Pyongan Province,38.7523,125.3247,Sea of Japan or East Sea,134.0,490.0,Confirmed,Success,0,0,0,3,1,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,2,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,3,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,3,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,3,2015
+KN-02,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,3,2015
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,5,8,2015
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,11,28,2015
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,12,21,2015
+Unha-3,SLV,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,502.0,325.8018018018018,Confirmed,Success,0,29,0,2,7,2016
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,3,10,2016
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,3,10,2016
+Nodong,MRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,222.3963963963964,800.0,Confirmed,Success,0,0,0,3,18,2016
+Nodong,MRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,17.0,325.8018018018018,Confirmed,Failure,0,0,0,3,18,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,20,33,0,4,15,2016
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,30.0,Confirmed,Success,9,29,0,4,23,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,21,33,0,4,27,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,10,24,0,4,28,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,20,30,0,5,30,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,20,56,0,6,21,2016
+Musudan,IRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,1400.0,400.0,Confirmed,Success,23,3,0,6,21,2016
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,10.0,325.8018018018018,Confirmed,Failure,2,28,0,7,9,2016
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,20,44,0,7,18,2016
+Scud-C,SRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,20,58,0,7,18,2016
+Nodong,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,500.0,Confirmed,Success,21,35,0,7,18,2016
+Nodong,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,1000.0,Confirmed,Success,22,53,0,8,2,2016
+Nodong,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,22,53,0,8,2,2016
+Pukguksong-1,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,500.0,Confirmed,Success,20,29,0,8,23,2016
+ER Scud,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,1000.0,Confirmed,Success,3,13,0,9,5,2016
+ER Scud,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,1000.0,Confirmed,Success,3,13,0,9,5,2016
+ER Scud,MRBM,Hwangju,"Hwangju,  North Hwanghae province",38.686834,125.702005,Sea of Japan or East Sea,222.3963963963964,1000.0,Confirmed,Success,3,13,0,9,5,2016
+Musudan,IRBM,Panghyon Airbase,"Kusong, North Pyongan",39.927472,125.207889,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,18,33,0,10,14,2016
+Musudan,IRBM,Panghyon Airbase,"Kusong, North Pyongan",39.927472,125.207889,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,22,0,0,10,19,2016
+Pukguksong-2,MRBM,Kusong Testing Ground,"Kusong, North Pyongan",40.01325,125.22302,Sea of Japan or East Sea,550.0,500.0,Confirmed,Success,22,55,0,2,11,2017
+ER Scud,MRBM,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,260.0,1000.0,Confirmed,Success,22,34,0,3,5,2017
+ER Scud,MRBM,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,260.0,1000.0,Confirmed,Success,22,34,0,3,5,2017
+ER Scud,MRBM,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,260.0,1000.0,Confirmed,Success,22,34,0,3,5,2017
+ER Scud,MRBM,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,260.0,1000.0,Confirmed,Success,22,34,0,3,5,2017
+ER Scud,MRBM,Sohae Satellite Launching Station,"Cholsan County, North Pyongan Province",39.6596,124.7057,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,22,34,0,3,5,2017
+Unknown,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,22,0,0,3,21,2017
+Hwasong-12,IRBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,189.0,60.0,Confirmed,Failure,21,42,0,4,4,2017
+Hwasong-12,IRBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,21,21,0,4,15,2017
+Hwasong-12,IRBM,Pukchang Airfield,South Pyongan Province,39.504417,125.964333,Sea of Japan or East Sea,71.0,325.8018018018018,Confirmed,Failure,20,33,0,4,28,2017
+Hwasong-12,IRBM,North Kusong Testing Ground,"Kusong, North Pyongan",40.0659,125.2099,Sea of Japan or East Sea,2111.0,787.0,Confirmed,Success,20,28,0,5,14,2017
+Pukguksong-2,MRBM,Lake Yonpung,South Pyongan Province,39.618283,125.8035851,Sea of Japan or East Sea,560.0,500.0,Confirmed,Success,7,59,0,5,21,2017
+Scud-C MaRV,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,120.0,400.0,Confirmed,Success,20,40,0,5,28,2017
+Hwasong-14,ICBM,Panghyon,"Kusong, North Pyongan",39.872153,125.269192,Sea of Japan or East Sea,2802.0,933.0,Confirmed,Success,0,40,0,7,4,2017
+Hwasong-14,ICBM,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Sea of Japan or East Sea,3725.0,998.0,Confirmed,Success,14,42,0,7,28,2017
+Scud-B MaRV,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,250.0,Confirmed,Success,21,49,0,8,25,2017
+Scud-B MaRV,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,22,7,0,8,25,2017
+Scud-B MaRV,SRBM,Kittaeryong Missile Base,"Kittae Pass, Kangwon Province, (North Korea)",38.99083,127.6236,Sea of Japan or East Sea,222.3963963963964,250.0,Confirmed,Success,22,19,0,8,25,2017
+Hwasong-12,IRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Pacific Ocean,550.0,2700.0,Confirmed,Success,20,58,0,8,28,2017
+Hwasong-12,IRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Pacific Ocean,770.0,3700.0,Confirmed,Success,21,57,0,9,14,2017
+Hwasong-15,ICBM,Pyongsong Field,"Pyongsong, South Pyongan Province",39.282,125.869,Sea of Japan or East Sea,4475.0,950.0,Confirmed,Success,18,18,0,11,28,2017
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,4,17,2019
+KN-23,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,200.0,Confirmed,Success,1,54,0,5,4,2019
+KN-23,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,0,0,0,5,4,2019
+KN-23,SRBM,Baegun,"North Pyongan, North Korea",40.029678,125.227326,Sea of Japan or East Sea,50.0,420.0,Confirmed,Success,7,29,0,5,9,2019
+KN-23,SRBM,Baegun,"North Pyongan, North Korea",40.029678,125.227326,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Success,7,49,0,5,9,2019
+KN-23,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,50.0,430.0,Confirmed,Success,20,34,0,7,24,2019
+KN-23,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,50.0,690.0,Confirmed,Success,20,57,0,7,24,2019
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,30.0,250.0,Confirmed,Success,20,6,0,7,30,2019
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,30.0,250.0,Confirmed,Success,20,27,0,7,30,2019
+KN-25,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,25.0,220.0,Confirmed,Success,17,59,0,8,1,2019
+KN-25,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,25.0,220.0,Confirmed,Success,18,23,0,8,1,2019
+KN-23,SRBM,Kwail Airbase,"Kwail, Kwail-gun, South Hwanghae",38.421522,125.024421,Sea of Japan or East Sea,37.0,450.0,Confirmed,Success,20,24,0,8,5,2019
+KN-23,SRBM,Kwail Airbase,"Kwail, Kwail-gun, South Hwanghae",38.421522,125.024421,Sea of Japan or East Sea,37.0,450.0,Confirmed,Success,20,36,0,8,5,2019
+KN-24,SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,48.0,400.0,Confirmed,Success,20,34,0,8,9,2019
+KN-24,SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,48.0,400.0,Confirmed,Success,20,50,0,8,9,2019
+KN-24,SRBM,Tongchan,"Kangwon Province, (North Korea)",38.953797,127.891882,Sea of Japan or East Sea,30.0,230.0,Confirmed,Success,23,1,0,8,15,2019
+KN-24,SRBM,Tongchan,"Kangwon Province, (North Korea)",38.953797,127.891882,Sea of Japan or East Sea,30.0,230.0,Confirmed,Success,23,16,0,8,15,2019
+KN-25,SRBM,Sondok Airbase,"Sondok, South Hamgyong Province",39.7437,127.4732,Sea of Japan or East Sea,97.0,380.0,Confirmed,Success,21,45,0,8,23,2019
+KN-25,SRBM,Sondok Airbase,"Sondok, South Hamgyong Province",39.7437,127.4732,Sea of Japan or East Sea,97.0,380.0,Confirmed,Success,22,2,0,8,23,2019
+KN-25,SRBM,Kaechon Air Base,"Kaechon, South Pyongan Province",39.752321,125.899905,Sea of Japan or East Sea,50.0,330.0,Confirmed,Success,21,53,0,9,9,2019
+KN-25,SRBM,Kaechon Air Base,"Kaechon, South Pyongan Province",39.752321,125.899905,Sea of Japan or East Sea,50.0,330.0,Confirmed,Success,22,12,0,9,9,2019
+KN-25,SRBM,Kaechon Air Base,"Kaechon, South Pyongan Province",39.752321,125.899905,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,0,0,0,9,9,2019
+Pukguksong-3,SLBM,Yonghung Bay,"Kangwon Province, (North Korea)",39.26,127.58,Sea of Japan or East Sea,910.0,450.0,Confirmed,Success,22,0,0,10,1,2019
+KN-25,SRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,90.0,370.0,Confirmed,Success,7,35,0,10,31,2019
+KN-25,SRBM,Sunchon Airbase,South Pyongan Province,39.412594,125.89031,Sea of Japan or East Sea,90.0,370.0,Confirmed,Success,7,38,0,10,31,2019
+KN-25,SRBM,Yonpo Airport,"Hamhung, South Hamgyong Province",39.78938,127.53993,Sea of Japan or East Sea,97.0,380.0,Confirmed,Success,7,59,0,11,28,2019
+KN-25,SRBM,Yonpo Airport,"Hamhung, South Hamgyong Province",39.78938,127.53993,Sea of Japan or East Sea,97.0,380.0,Confirmed,Success,7,59,30,11,28,2019
+KN-25,SRBM,Sangum-ri,"Anbyon County, Kangwon Province (North Korea)",39.141,127.616,Sea of Japan or East Sea,35.0,240.0,Confirmed,Success,3,37,0,3,2,2020
+KN-25,SRBM,Sangum-ri,"Anbyon County, Kangwon Province (North Korea)",39.141,127.616,Sea of Japan or East Sea,35.0,240.0,Confirmed,Success,3,37,20,3,2,2020
+KN-25,SRBM,Sondok,"Sondok, South Hamgyong Province",39.743,127.499,Sea of Japan or East Sea,50.0,200.0,Confirmed,Success,22,36,0,3,8,2020
+KN-25,SRBM,Sondok,"Sondok, South Hamgyong Province",39.743,127.499,Sea of Japan or East Sea,50.0,200.0,Confirmed,Success,22,36,20,3,8,2020
+KN-25,SRBM,Sondok,"Sondok, South Hamgyong Province",39.743,127.499,Sea of Japan or East Sea,50.0,200.0,Confirmed,Success,22,37,20,3,8,2020
+KN-24,SRBM,Sunchon,North Pyongan Province,39.4163,125.8907,Sea of Japan or East Sea,50.0,410.0,Confirmed,Success,21,45,0,3,20,2020
+KN-24,SRBM,Sunchon,North Pyongan Province,39.4163,125.8907,Sea of Japan or East Sea,50.0,410.0,Confirmed,Success,21,50,0,3,20,2020
+KN-25,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,30.0,230.0,Confirmed,Success,21,10,0,3,28,2020
+KN-25,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",39.40167,127.5369,Sea of Japan or East Sea,30.0,230.0,Confirmed,Success,21,10,20,3,28,2020
+Unnamed large solid-propellant SRBM (KN-23 Mod),SRBM,Sondok Airbase,"Sondok, South Hamgyong Province",39.7437,127.4732,Sea of Japan or East Sea,60.0,450.0,Confirmed,Success,22,4,0,3,24,2021
+Unnamed large solid-propellant SRBM (KN-23 Mod),SRBM,Yonpo Airport,"Hamhung, South Hamgyong Province",39.78938,127.53993,Sea of Japan or East Sea,60.0,450.0,Confirmed,Success,22,23,0,3,24,2021
+Rail-mobile KN-23,SRBM,Yangdok,"Yangdok, South Pyongan Province",39.275721,126.804867,Sea of Japan or East Sea,60.0,800.0,Confirmed,Success,3,34,0,9,15,2021
+Rail-mobile KN-23,SRBM,Yangdok,"Yangdok, South Pyongan Province",39.275721,126.804867,Sea of Japan or East Sea,60.0,800.0,Confirmed,Success,3,39,0,9,15,2021
+Hwasong-8,HGV,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Sea of Japan or East Sea,60.0,200.0,Confirmed,Success,21,40,0,9,27,2021
+Navalized KN-23,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,60.0,590.0,Confirmed,Success,1,17,0,10,19,2021
+Hwasong-8 MARV,MRBM,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Sea of Japan or East Sea,30.0,700.0,Confirmed,Success,23,10,0,1,5,2022
+Hwasong-8 MARV,MRBM,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Sea of Japan or East Sea,60.0,1000.0,Confirmed,Success,22,27,0,1,10,2022
+Rail-mobile KN-23,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Sea of Japan or East Sea,36.0,430.0,Confirmed,Success,5,41,0,1,14,2022
+Rail-mobile KN-23,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Sea of Japan or East Sea,36.0,430.0,Confirmed,Success,5,52,0,1,14,2022
+KN-24,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,42.0,380.0,Confirmed,Success,23,50,0,1,16,2022
+KN-24,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,42.0,380.0,Confirmed,Success,23,54,0,1,16,2022
+KN-23,SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,20.0,190.0,Confirmed,Success,23,1,0,1,26,2022
+KN-23,SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,20.0,190.0,Confirmed,Success,23,6,0,1,26,2022
+Hwasong-12,IRBM,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Sea of Japan or East Sea,2000.0,800.0,Confirmed,Success,23,52,0,1,29,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,620.0,300.0,Confirmed,Success,22,52,0,2,26,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,560.0,270.0,Confirmed,Success,23,48,0,3,4,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,222.3963963963964,325.8018018018018,Confirmed,Failure,0,30,0,3,16,2022
+Hwasong-17,ICBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,6248.0,1090.0,Confirmed,Success,5,34,0,3,24,2022
+Unnamed small solid-propellant SRBM (2022),SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,25.0,110.0,Confirmed,Success,9,0,0,4,16,2022
+Unnamed small solid-propellant SRBM (2022),SRBM,Hungnam,"Hamhung, South Hamgyong",39.811611,127.66375,Sea of Japan or East Sea,25.0,110.0,Confirmed,Success,9,0,0,4,16,2022
+Unknown,ICBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,780.0,470.0,Confirmed,Failure,3,3,0,5,4,2022
+Unknown,SLBM,Sinpo Shipyard,South Hamgyong province,40.0368,128.1839,Sea of Japan or East Sea,60.0,600.0,Confirmed,Success,5,7,0,5,7,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,90.0,360.0,Confirmed,Success,9,29,0,5,12,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,90.0,360.0,Confirmed,Success,9,29,0,5,12,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,90.0,360.0,Confirmed,Success,9,29,0,5,12,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,360.0,540.0,Confirmed,Failure,21,0,0,5,24,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,20.0,325.8018018018018,Confirmed,Failure,21,37,0,5,24,2022
+Unknown,SRBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,60.0,760.0,Confirmed,Success,21,42,0,5,24,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,50.0,350.0,Confirmed,Success,0,6,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,50.0,300.0,Confirmed,Success,0,10,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,50.0,400.0,Confirmed,Success,0,15,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,57.0,370.0,Confirmed,Success,0,0,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,100.0,350.0,Confirmed,Success,0,24,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,50.0,400.0,Confirmed,Success,0,30,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,57.0,370.0,Confirmed,Success,0,0,0,6,5,2022
+Unknown,SRBM,Hodo Peninsula,"Kangwon Province, (North Korea)",37.00401175765766,118.88924419414415,Sea of Japan or East Sea,100.0,300.0,Confirmed,Success,0,41,0,6,5,2022
+Navalized KN-23,SLBM,Taechon Reservoir,"Taechon, North Pyongan Province",39.9857,125.5186,Sea of Japan or East Sea,60.0,600.0,Confirmed,Success,21,53,0,9,24,2022
+Unnamed large solid-propellant SRBM (KN-23 Mod),SRBM,Sunan,"Sunan District, Pyongyang",39.20299,125.70926,Sea of Japan or East Sea,50.0,350.0,Confirmed,Success,9,10,0,9,28,2022
+Unnamed large solid-propellant SRBM (KN-23 Mod),SRBM,Sunan,"Sunan District, Pyongyang",39.20299,125.70926,Sea of Japan or East Sea,50.0,300.0,Confirmed,Success,9,17,0,9,28,2022
+KN-25,SRBM,Sunchon,North Pyongan Province,39.4163,125.8907,Sea of Japan or East Sea,50.0,350.0,Confirmed,Success,11,48,0,9,29,2022
+KN-25,SRBM,Sunchon,North Pyongan Province,39.4163,125.8907,Sea of Japan or East Sea,50.0,300.0,Confirmed,Success,11,57,0,9,29,2022
+KN-23,SRBM,West Sunan,"Sunan District, Pyongyang",39.3942,125.6773,Sea of Japan or East Sea,50.0,400.0,Confirmed,Success,21,42,0,9,30,2022
+KN-23,SRBM,West Sunan,"Sunan District, Pyongyang",39.3942,125.6773,Sea of Japan or East Sea,50.0,350.0,Confirmed,Success,21,58,0,9,30,2022
+New IRBM (2022),IRBM,Mupyong-ni Arms Plant,"Mup'yong-ni, Chagang province",40.611208,126.425743,Pacific Ocean,970.0,4500.0,Confirmed,Success,22,22,0,10,3,2022
+KN-25,SRBM,Samsok,"Samsok District, Pyongyang",39.1268,125.9579,Sea of Japan or East Sea,100.0,350.0,Confirmed,Success,21,0,0,10,5,2022
+KN-23,SRBM,Samsok,"Samsok District, Pyongyang",39.1268,125.9579,Sea of Japan or East Sea,50.0,800.0,Confirmed,Success,21,15,0,10,5,2022
+KN-25,SRBM,Munchon,"Munchon, Kangwong Province",39.2815,127.377,Sea of Japan or East Sea,90.0,350.0,Confirmed,Success,16,47,0,10,8,2022
+KN-25,SRBM,Munchon,"Munchon, Kangwong Province",39.2815,127.377,Sea of Japan or East Sea,90.0,350.0,Confirmed,Success,16,53,0,10,8,2022
+Unknown,SRBM,Sunan,"Sunan District, Pyongyang",39.20299,125.70926,Sea of Japan or East Sea,50.0,700.0,Confirmed,Success,16,47,0,10,13,2022
+Unknown,SRBM,Tongchan,"Kangwon Province, (North Korea)",38.953797,127.891882,Sea of Japan or East Sea,24.0,230.0,Confirmed,Success,2,59,0,10,28,2022
+Unknown,SRBM,Tongchan,"Kangwon Province, (North Korea)",38.953797,127.891882,Sea of Japan or East Sea,24.0,230.0,Confirmed,Success,3,18,0,10,28,2022
+Unknown,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Yellow Sea or West Sea,222.3963963963964,325.8018018018018,Confirmed,Success,21,51,0,11,1,2022
+Unknown,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Yellow Sea or West Sea,222.3963963963964,325.8018018018018,Confirmed,Success,21,51,0,11,1,2022
+Unknown,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Yellow Sea or West Sea,222.3963963963964,325.8018018018018,Confirmed,Success,21,51,0,11,1,2022
+Unknown,SRBM,Uiju,"Uiju County, North Pyongan Province",40.025847,124.577936,Yellow Sea or West Sea,222.3963963963964,325.8018018018018,Confirmed,Success,21,51,0,11,1,2022
+Unknown,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,100.0,200.0,Confirmed,Success,23,51,0,11,1,2022
+Unknown,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,150.0,150.0,Confirmed,Success,23,51,0,11,1,2022
+Unknown,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,150.0,150.0,Confirmed,Success,23,51,0,11,1,2022
+Unknown,ICBM,Sunan,"Sunan District, Pyongyang",39.20299,125.70926,Sea of Japan or East Sea,1920.0,760.0,Confirmed,Failure,22,39,0,11,2,2022
+Unknown,SRBM,Kaechon Air Base,"Kaechon, South Pyongan Province",39.752321,125.899905,Sea of Japan or East Sea,70.0,330.0,Confirmed,Success,23,39,0,11,2,2022
+Unknown,SRBM,Kaechon Air Base,"Kaechon, South Pyongan Province",39.752321,125.899905,Sea of Japan or East Sea,70.0,330.0,Confirmed,Success,23,48,0,11,2,2022
+Unknown,SRBM,Koksan,"Koksan, North Hwanghae Province",38.78,126.67,Sea of Japan or East Sea,130.0,490.0,Confirmed,Success,12,34,0,11,3,2022
+Unknown,SRBM,Koksan,"Koksan, North Hwanghae Province",38.78,126.67,Sea of Japan or East Sea,130.0,490.0,Confirmed,Success,12,39,0,11,3,2022
+Unknown,SRBM,Koksan,"Koksan, North Hwanghae Province",38.78,126.67,Sea of Japan or East Sea,130.0,490.0,Confirmed,Success,12,42,0,11,3,2022
+Unknown,SRBM,Sukchon,"Sukchon, South Pyongan Province",39.42,125.63,Sea of Japan or East Sea,30.0,290.0,Confirmed,Success,6,31,0,11,9,2022
+Unknown,SRBM,Wonsan Kalma International Airport,"Kangwon Province, (North Korea)",39.1677,127.4817,Sea of Japan or East Sea,47.0,240.0,Confirmed,Success,1,47,0,11,17,2022
+Hwasong-17,ICBM,Pyongyang International Airport,"Pyongyang, North Korea",39.200159,125.673256,Sea of Japan or East Sea,6100.0,1000.0,Confirmed,Success,1,14,0,11,18,2022

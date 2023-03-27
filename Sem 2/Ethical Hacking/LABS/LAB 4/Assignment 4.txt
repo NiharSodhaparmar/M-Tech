@@ -1,0 +1,30 @@
+This is a today's task for the lab session.
+
+You have to scan any two domains from the below list and perform a network scan using the nmap command on the below mentioned domains only.
+List of domain
+
+pddikti.uinsatu.ac.id
+
+185.114.245.109
+
+203.111.26.50
+
+141.223.197.31
+
+gw13.azot.kuzbass.net
+
+82.194.5.86
+
+103.30.93.194
+
+www.safeway.com
+
+40.115.74.86
+
+www.ikea.com
+
+You have to compare the output of each command and understand why this port is open and why this port is closed in detail. They can refer to the previous session for this. I have mentioned how to identify whether a particular port is open or not.
+
+explanation :
+
+ You have to perform all the basic commands listed in the document and check the output. so it's easy to compare.
