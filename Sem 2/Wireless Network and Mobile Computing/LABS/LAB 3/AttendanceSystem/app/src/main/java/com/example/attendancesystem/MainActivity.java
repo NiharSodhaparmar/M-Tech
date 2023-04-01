@@ -119,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
                 .addLocationRequest(locationRequest);
 
         //This checks whether the GPS mode (high accuracy,battery saving, device only) is set appropriately for "mRequest". If the current settings cannot fulfil
-        //mRequest(the Google Fused Location Provider determines these automatically), then we listen for failutes and show a dialog box for the user to easily
+        //mRequest(the Google Fused Location Provider determines these automatically), then we listen for failures and show a dialog box for the user to easily
         //change these settings.
         SettingsClient client = LocationServices.getSettingsClient(MainActivity.this);
         Task<LocationSettingsResponse> task = client.checkLocationSettings(builder.build());
@@ -219,7 +219,6 @@ public class MainActivity extends AppCompatActivity {
 
                     myRef.child(stu_enrollment).setValue(student);
 
-//                myRfe.setValue("Hello Rohit");
                     Toast.makeText(MainActivity.this, "Present", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Check Location", Toast.LENGTH_SHORT).show();
@@ -241,7 +240,6 @@ public class MainActivity extends AppCompatActivity {
 
                     myRef.child(stu_enrollment).setValue(student);
 
-//                myRfe.setValue("Hello Rohit");
                     Toast.makeText(MainActivity.this, "Absent", Toast.LENGTH_SHORT).show();
                 } else {
                     Toast.makeText(MainActivity.this, "Check Location", Toast.LENGTH_SHORT).show();
