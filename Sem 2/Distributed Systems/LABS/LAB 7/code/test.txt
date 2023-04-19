@@ -1,0 +1,10 @@
+This
+is
+a
+test
+text
+file
+for
+accessing
+from
+remote.
