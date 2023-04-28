@@ -1,0 +1,12 @@
+The content covered in the class and syllabus published on the web site:
+
+Wireless Communications and Networking by Mark and Zhuang
+Chapters 1, 2 (up to 2.4), 5, 7, 8
+Wireless Communications by Rappaport
+Chapters 2, 3, 5 (up to 5.5.2.2), 10, 11 (up to 11.4.4)
+
+
+Few sections from Rappport book Chapter 4 and Complete Chapter 5 
+Mobile Computing topics - Mobile IP,  Mobile TCP, Data Synchronization, Server - Client Architecture, Data handling mechanism and other issues
+
+Mobile Adhoc network book chapters - MAC, Routing, Multicast
