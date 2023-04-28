@@ -1,0 +1,6 @@
+Tutorials:
+	https://www.tensorflow.org/tutorials/generative/adversarial_fgsm
+	https://www.tensorflow.org/tutorials/generative/dcgan
+
+Please ask everyone to submit one lab exercise as follows (deadline: after the exam):
+	Lab Exercise: Write a program to generate adversarial attack on Logistic Regression using Basic Iterative Method (Iterative FGSM) and Projected Gradient Methods.
