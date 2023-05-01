@@ -1,0 +1,15 @@
+https://www.geeksforgeeks.org/deadlock-handling-strategies-in-distributed-system/
+
+https://www.geeksforgeeks.org/deadlock-detection-in-distributed-systems-2/
+
+https://www.javatpoint.com/deadlock-detection-in-distributed-systems#:~:text=Path%2Dpushing%20algorithms%20detect%20distributed,WFG%20to%20all%20neighboring%20sites.
+
+https://www.geeksforgeeks.org/chandy-misra-haass-distributed-deadlock-detection-algorithm/
+
+https://www.geeksforgeeks.org/difference-between-shared-memory-model-and-message-passing-model-in-ipc/
+
+https://www.geeksforgeeks.org/what-is-distributed-shared-memory-and-its-advantages/
+
+https://www.geeksforgeeks.org/algorithm-for-implementing-distributed-shared-memory/
+
+https://www.geeksforgeeks.org/design-and-implementation-issue-of-distributed-shared-memory/

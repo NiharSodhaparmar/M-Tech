@@ -1,0 +1,6 @@
+FGSM
+https://neptune.ai/blog/adversarial-attacks-on-neural-networks-exploring-the-fast-gradient-sign-method
+
+
+PGD
+https://towardsdatascience.com/know-your-enemy-7f7c5038bdf3#:~:text=adversarially%20robust%20model.-,Projected%20Gradient%20Descent%20(PGD),copy%20of%20your%20model's%20weights.
