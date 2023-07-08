@@ -1,0 +1,5 @@
+https://medium.com/analytics-vidhya/web-scraping-instagram-with-selenium-python-b8e77af32ad4
+
+https://medium.com/analytics-vidhya/web-scraping-instagram-with-selenium-b6b1f27b885
+
+https://medium.com/@mintholic1/web-scraping-basics-with-python-getting-all-the-comments-off-of-a-reddit-page-fb7b7b1265fa
