@@ -1,0 +1,3 @@
+Differential privacy is a mathematical framework for ensuring the privacy of individuals in datasets. 
+It can provide a strong guarantee of privacy by allowing data to be analyzed without revealing sensitive 
+information about any individual in the dataset.

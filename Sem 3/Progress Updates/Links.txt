@@ -1,0 +1,19 @@
+Social Media Scraping: Tools, How-to & Case Studies in 2023
+https://research.aimultiple.com/social-media-scraping/
+
+
+Web Scraping APIs: How-To, Capabilities & Top 10 Tools in 2023
+https://research.aimultiple.com/web-scraping-apis/
+
+
+Top 7 Python Web Scraping Libraries & Tools in 2023
+https://research.aimultiple.com/python-web-scraping-libraries/	
+
+
+Facebook Scraper: How to Scrape Facebook in 2023
+https://research.aimultiple.com/facebook-scraping/
+
+
+7 Web Scraping Best Practices You Must Be Aware of in ’23
+https://research.aimultiple.com/web-scraping-best-practices/#5-respect-the-robots-txt-file
+
