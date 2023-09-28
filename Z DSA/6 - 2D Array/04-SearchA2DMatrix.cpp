@@ -15,6 +15,9 @@ private:
 
             int element = matrix[mid / col][mid % col];
 
+            cout << " mid / col" << mid / col << endl;
+            cout << "mid % col " << mid % col << endl;
+
             if (element == target)
                 return true;
 

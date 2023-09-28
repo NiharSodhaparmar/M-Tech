@@ -42,6 +42,9 @@ def SanText_plus_init(prob_matrix_init, word2id_init, sword2id_init, all_words_i
     sword2id=sword2id_init
 
     id2sword = {v: k for k, v in sword2id.items()}
+    # print("---------------------------------------------------------------")
+    # print("id2sword")
+    # print(id2sword)
 
     all_words = all_words_init
     p=p_init
@@ -49,6 +52,9 @@ def SanText_plus_init(prob_matrix_init, word2id_init, sword2id_init, all_words_i
 
 def SanText_plus(doc):
     new_doc = []
+    # print("======================================================")
+    # print("DOC")
+    # print(doc)
     for word in doc:
         if word in word2id:
             # In-vocab
@@ -56,6 +62,10 @@ def SanText_plus(doc):
                 #Sensitive Words
                 index = word2id[word]
                 sampling_prob = prob_matrix[index]
+                # print("======================================================")
+                # print("Sampling Prob Length")
+                # print(len(sampling_prob))
+                # print(sampling_prob)
                 sampling_index = np.random.choice(len(sampling_prob), 1, p=sampling_prob)
                 new_doc.append(id2sword[sampling_index[0]])
             else:
@@ -77,6 +87,9 @@ def SanText_plus(doc):
             new_doc.append(all_words[sampling_index[0]])
 
     new_doc = " ".join(new_doc)
+    # print("NEW DOC")
+    # print(new_doc)
+    # print("======================================================")
     return new_doc
 
 

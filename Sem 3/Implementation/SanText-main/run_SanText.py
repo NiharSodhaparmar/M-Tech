@@ -137,9 +137,24 @@ def main():
     else:
         raise NotImplementedError
 
+    # print("======================================================")
+    # print("args.sensitive_word_percentage")
+    # print(args.sensitive_word_percentage)
     sensitive_word_count = int(args.sensitive_word_percentage * len(vocab))
+    # sensitive_word_count = int(args.sensitive_word_percentage * len(vocab))
+    # print("======================================================")
+    # print("len(vocab)")
+    # print(len(vocab))
+    # print(vocab)
+    # print("sensitive_word_count")
+    # print(sensitive_word_count)
     words = [key for key, _ in vocab.most_common()]
     sensitive_words = words[-sensitive_word_count - 1:]
+
+    # print("======================================================")
+    # print('words')
+    # print(words)
+    # print("======================================================")
 
     sensitive_words2id = {word: k for k, word in enumerate(sensitive_words)}
     logger.info("#Total Words: %d, #Sensitive Words: %d" % (len(words),len(sensitive_words2id)))
@@ -152,18 +167,28 @@ def main():
     sensitive_count = 0
     all_count = 0
     if args.embedding_type == "glove":
-        num_lines = sum(1 for _ in open(args.word_embedding_path))
+        num_lines = sum(1 for _ in open(args.word_embedding_path, encoding="utf8"))
         logger.info("Loading Word Embedding File: %s" % args.word_embedding_path)
 
-        with open(args.word_embedding_path) as f:
+        with open(args.word_embedding_path, encoding="utf8") as f:
             # Skip first line if of form count/dim.
+            # print("=================================================")
+            # print("vocab")
+            # print(vocab)
+            # print("=================================================")
             line = f.readline().rstrip().split(' ')
             if len(line) != 2:
                 f.seek(0)
             for row in tqdm(f, total=num_lines - 1):
                 content = row.rstrip().split(' ')
+                
                 cur_word=word_normalize(content[0])
+                # print("------------------------------------------")
+                # print(cur_word)
                 if cur_word in vocab and cur_word not in word2id:
+                    # print("--------------------------------------------------")
+                    # print("content")
+                    # print(content)
                     word2id[cur_word] = all_count
                     all_count += 1
                     emb=[float(i) for i in content[1:]]
@@ -175,6 +200,19 @@ def main():
                 assert len(word2id)==len(all_word_embed)
                 assert len(sword2id) == len(sensitive_word_embed)
             f.close()
+            # print("=================================================")
+            # print("all word embed")
+            # print(all_word_embed)
+            # print("=================================================")
+            # print("len of all word embed")
+            # print(len(all_word_embed))
+            # print("=================================================")
+            # print("word2id")
+            # print(word2id)
+            # print("=================================================")
+            # print("sword2id")
+            # print(sword2id)
+            # print("=================================================")
     else:
         logger.info("Loading BERT Embedding File: %s" % args.bert_model_path)
         model=BertForMaskedLM.from_pretrained(args.bert_model_path)
@@ -202,16 +240,20 @@ def main():
 
     logger.info("Calculating Prob Matrix for Exponential Mechanism...")
     prob_matrix = cal_probability(all_word_embed,sensitive_word_embed, args.epsilon)
+    # print("======================================================")
+    # print("prob_matrix")
+    # print(prob_matrix)
+    # print("======================================================")
 
     threads = min(args.threads, cpu_count())
 
     for file_name in ['train.tsv','dev.tsv']:
         data_file = os.path.join(args.data_dir, file_name)
-        out_file = open(os.path.join(args.output_dir, file_name), 'w')
+        out_file = open(os.path.join(args.output_dir, file_name), 'w', encoding="utf8")
         logger.info("Processing file: %s. Will write to: %s" % (data_file,os.path.join(args.output_dir, file_name)))
 
-        num_lines = sum(1 for _ in open(data_file))
-        with open(data_file, 'r') as rf:
+        num_lines = sum(1 for _ in open(data_file, encoding="utf8"))
+        with open(data_file, 'r', encoding="utf8") as rf:
             # header
             header = next(rf)
             out_file.write(header)
@@ -262,6 +304,22 @@ def main():
 
             rf.close()
 
+        # print("======================================================")
+        # print("docs")
+        # print(docs)
+        # print("======================================================")
+
+        # print("======================================================")
+        # print("args.p")
+        # print(args.p)
+        # print("======================================================")
+
+        # print("======================================================")
+        # print("tokenizer")
+        # print(tokenizer)
+        # print("======================================================")
+        
+
         with Pool(threads, initializer=SanText_plus_init, initargs=(prob_matrix, word2id, sword2id, words, args.p, tokenizer)) as p:
             annotate_ = partial(
                 SanText_plus,
@@ -276,6 +334,11 @@ def main():
             p.close()
 
         logger.info("Saving ...")
+
+        # print("======================================================")
+        # print("results")
+        # print(results)
+        # print("======================================================")
 
         if args.task == "SST-2":
             for i, predicted_text in enumerate(results):

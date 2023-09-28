@@ -1,0 +1,5 @@
+How to run?
+
+python run_SanText.py --task SST-2 --method SanText --epsilon 3.0 --word_embedding_path ./data/glove.840B.300d.txt --word_embedding_size 300 --data_dir ./data/SST-2/ --output_dir ./output_SanText_glove/SST-2/ --threads 8 --p 0.3 --sensitive_word_percentage 0.5
+
+python run_SanText.py --task QNLI --method SanText_plus --epsilon 1.0 --word_embedding_path ./data/glove.840B.300d.txt --word_embedding_size 300 --data_dir ./data/QNLI/ --output_dir ./output_SanText_plus_glove/QNLI/ --threads 12 --p 0.3 --sensitive_word_percentage 0.9 
