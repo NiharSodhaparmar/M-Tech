@@ -1,0 +1,32 @@
+In general, two types of information disclosures have been identified in the literature:
+identity disclosure and attribute disclosure attacks [51, 103, 107]. Identity disclosure occurs when
+an individual is mapped to an instance in a released dataset. Attribute disclosure happens when the
+adversary could infer some new information regarding an individual based on the released data.
+Attribute disclosure becomes more probable when there is accurate disclosure of people’s identities. Similarly, privacy leakage attacks in social media could be also categorized into either identity
+disclosure or attribute disclosure.
+ These user privacy issues mandate social media data publishers
+to protect users’ privacy by sanitizing user-generated data before they are published publicly
+
+first two types of attack
+on attribute disclousre attack we are working
+which attacks can be possible on attribute disclousre attacks
+
+In \cite{alufaisan2017hacking}, author shows the evasion and poisoning attacks on the profile attributes inference models. In evasion attacks, a user modifies their profile information by adding or removing features to avoid predictions that could compromise their privacy. In Poisoning Attacks, manipulation of the training data is necessary to reduce the overall performance of the target classifier. But generally training data of attribute predictor models is not accessible. 
+
+Generating adversarial reactions: Using the strong adversarial features εstrong ex-
+tracted in above step, FOX generates adversarial reactions to fool black-box classifiers.
+
+Social media data has been mined over the years
+to predict individual sensitive attributes such as political and
+religious beliefs. Indeed, mining such data can improve the user
+experience with personalization and freemium services. Still, it
+can also be harmful and discriminative when used to make
+critical decisions, such as employment. In this work, we study the various various attribute inference
+attacks possible on the users data and different types of privacy techniques against this attacks. 
+
+In the realm of social media, the extensive mining of user data has enabled the prediction of sensitive individual attributes, including political and religious beliefs. While such data utilization enhances user experience through personalized services, it also poses potential harm and discrimination, particularly when influencing consequential decisions like employment. The publication of user-generated data poses a risk of compromising individuals' privacy.
+This research investigates a spectrum of attribute inference attacks on user data, analyzing their implications. Furthermore, we explore diverse privacy techniques designed to counteract these attacks, aiming to contribute insights and strategies for strengthening user privacy in the context of social media.
+
+They first use mechanisms to sanitize the public texts and then train the LM by the sanitized text. They propsed two token-wise sanitization methods SANTEXT and SANTEXT+.
+
+We take motivation from the [17] and [18], then provide the new approch to Posting Comments Under Differential Privacy. 
