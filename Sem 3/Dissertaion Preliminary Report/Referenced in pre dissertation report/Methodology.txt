@@ -1,0 +1,62 @@
+\chapter{Methodology}
+\onehalfspacing
+
+\section{Our Method}
+
+We propose approach Posting Comments Under Differential Privacy, which given first dataset $X$ (e.g., Facebook pictures comments) and an explainability tool (e.g., LIME). Then, extracts strong adversarial features $\varepsilon^{strong}$ from comments. These strong features is used to convert comments into Differential Private comments to mislead classifiers to avoid them from compromising the privacy of users. In the following we describe the steps, and used notations listed in Table \ref{table:notations}.
+
+\begin{table}[]
+\centering
+\begin{tabular}{ll}
+\hline
+\textbf{Symbol}         & \textbf{Description}                  \\ \hline
+$X$                     & Dataset of Facebook picture comments  \\ 
+$x$                     & Instance of a dataset (e.g., comment) \\
+$F$                     & Features set of $x$                   \\
+$Y$                     & Set of classes                        \\
+$h(.)$                  & Classifier                            \\
+$h_l(.)$                & Class label returned by classifier    \\
+$E(.)$                  & Explainability tool                   \\
+$\varepsilon^{strong}$  & Strong features                       \\ \hline
+\end{tabular}
+\caption{Notations}
+\label{table:notations}
+\end{table}
+
+\textit{\textbf{Step 1 - Extracting strong features:}} We have dataset $X$ (e.g., comments of Facebook users). For each instance $x \in X$, we have set of features $F$ (e.g., words of comments can be set of features). 
+
+For a given set of classes $Y = \left\{ y_1, y_2, ..., y_{|y|}  \right\} $ a classifier $h: X \to [0,1]^{|Y|}$ maps $x$ to a vector $h(x) = \left[  p_1, p_2, ..., p_{|y|} \right]$, where $h(x)[i] = p_i$ represents the probability that $x$ belongs to class $y_i$. The class label of $x$, that is the class $y_i$ with the highest probability $p_i$, is denoted by $h_l(x)$. We have to determine the most contributing features. 
+
+Let us define the $\mathcal{E}(E, x, h)$ function, which accepts Explainaibility tool $E$, an instance of dataset $x$ and classifier $h$ as input and returns the strong features for the instance $x$ as output. Now, extracting strong words from all dataset given as below,
+
+\begin{center}
+    $\varepsilon^{strong} = \bigcup_{x \in X} \mathcal{E}(E, x, h)$
+\end{center}
+
+\textit{\textbf{Step 2 - Generating Differentialy Private Comments:}} After constructing $\varepsilon^{strong}$, the next step involves generating Differentialy Private comments to mislead classifier $h$. For generating Differentialy Private comments we use the $SANTEXT^+$ algorithm proposed in \cite{yue2021differential}. Extracted strong words are considered as Sensitive tokens $V_s$, while other tokens considered as non sensitive tokens $V_n$ for the $SANTEXT^+$ algorithm. For the substitution of words we use the Glove Wiki Giga Word database. Suppose, Glove Wiki Giga Word database tokens are represented as $V_g$. Then protected tokens are $V_p = V_g - V_s$, while remaining tokens are considered as unprotected tokens $V_u$. Algorithm to generate Differentialy comment shown in \ref{alg:DP comments generator algo}.
+
+% \begin{center}    
+% \begin{minipage}{.85\linewidth}
+\begin{algorithm}[H]
+    \caption{Differentialy Private Comment Generator Algorithm}
+    \label{alg:DP comments generator algo}
+    \hspace*{\algorithmicindent} \textbf{Input: } $x$ instance of database $X$, where $x = \mathrm{\left \langle F_i \right \rangle}_{i=1}^{L}$, $\varepsilon^{strong}$ features as $V_s$, probability $p$ for biased coin, privacy parameter $p$ for biased coin, privacy parameter $\epsilon \geq 0$ \\
+    \hspace*{\algorithmicindent} \textbf{Output: } Differentialy Private Comment $\hat{x}$
+    \begin{algorithmic}[1]
+        \STATE Derive token vectors $\phi(F_i)$ for $i \in [1,L]$;
+        \FOR{$i = 1,...,L$}
+            \IF{$F_i \in V_s$}
+                \STATE Sample a substitution $(F')_i \in V_p$ with probability given in Eq. (\ref{eqn:eqn1});
+            \ELSE
+                \STATE Output $(F')_i = F_i$ with probability $(1-p)$;
+                \STATE or $(F')_i \in V_p$ with probability in Eq. (\ref{eqn:eqn2});
+            \ENDIF
+        \ENDFOR
+        \STATE Output Differential Private Comment $\hat{x} = \mathrm{\left \langle (F')_i \right \rangle}_{i=1}^{L}$
+    \end{algorithmic}
+\end{algorithm}
+% \end{minipage}
+% \end{center}
+
+
+\textit{\textbf{Step 3 - Checking similarity of Original Comment and Differentialy Private Comment:}} For comparing similarity between original comments and Differential comment, we used bert base nli mean tokens model. Bert base nli mean tokens model convert the senteces into 768 dimensional vector. We give the Original Comment($x$) and Differentialy Comment($\hat{x}$) inputs to the bert base nli mean token model, then get the sentence vectors $S_x$ for Original Comment and $S_{\hat{x}}$ for Differential Private comment. Now, we check the similarity between $S_x$ and $S_{\hat{x}}$ using cosine similarity.
